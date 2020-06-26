@@ -25,4 +25,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Readme file based on [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) by Billie Thompson.
 * Design guidance from Google's [Material Design](https://material.io/design).
 * Fonts from [Google Fonts](https://fonts.google.com).
-* Color guidance from Adobe Color [https://color.adobe.com/create/color-wheel].
+* Color guidance from [Adobe Color](https://color.adobe.com/create/color-wheel).
