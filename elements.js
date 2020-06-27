@@ -17,7 +17,7 @@ function buildSection(yearOrSeason, key, sectionId) {
 
     const figure = document.createElement("figure");
     const figcaption = document.createElement("figcaption");
-    const temp = figcaption.textContent =  `${yearOrSeason[key]}` + String.fromCharCode(176) + `F`;
+    figcaption.textContent =  `${yearOrSeason[key]}` + String.fromCharCode(176) + `F`;
 
     const test = Number(`${yearOrSeason[key]}`);
 
