@@ -1,36 +1,5 @@
 import {years, winters, springs, summers, falls} from "./groups.js";
 
-function resultsYears() {
-
-    Object.keys(years).forEach(function(key) {
-        buildSection(years, key, "annual");
-    });
-}
-
-function resultsWinters() {
-    Object.keys(winters).forEach(function(key) {
-        buildSection(winters, key, "winter");
-    });
-}
-
-function resultsSprings() {
-    Object.keys(springs).forEach(function(key) {
-        buildSection(springs, key, "spring");
-    });
-}
-
-function resultsSummers() {
-    Object.keys(summers).forEach(function(key) {
-        buildSection(summers, key, "summer");
-    });
-}
-
-function resultsFalls() {
-    Object.keys(falls).forEach(function(key) {
-        buildSection(falls, key, "fall");
-    });
-}
-
 function buildSection(yearOrSeason, key, sectionId) {
     const section = document.getElementById(sectionId);
 
@@ -62,6 +31,37 @@ function buildSection(yearOrSeason, key, sectionId) {
     year.appendChild(figure);
     section.appendChild(year);
     return;
+}
+
+function resultsYears() {
+
+    Object.keys(years).forEach(function(key) {
+        buildSection(years, key, "annual");
+    });
+}
+
+function resultsWinters() {
+    Object.keys(winters).forEach(function(key) {
+        buildSection(winters, key, "winter");
+    });
+}
+
+function resultsSprings() {
+    Object.keys(springs).forEach(function(key) {
+        buildSection(springs, key, "spring");
+    });
+}
+
+function resultsSummers() {
+    Object.keys(summers).forEach(function(key) {
+        buildSection(summers, key, "summer");
+    });
+}
+
+function resultsFalls() {
+    Object.keys(falls).forEach(function(key) {
+        buildSection(falls, key, "fall");
+    });
 }
 
 export {
