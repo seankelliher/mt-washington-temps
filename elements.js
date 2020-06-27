@@ -7,7 +7,7 @@ function buildSection(yearOrSeason, key, sectionId) {
     year.className = "year";
 
     const yearName = document.createElement("div");
-    yearName.className = "year-name"
+    yearName.className = "year-name";
 
     const time = document.createElement("time");
     time.textContent = key.substring(1, 5);
@@ -18,7 +18,7 @@ function buildSection(yearOrSeason, key, sectionId) {
     const figure = document.createElement("figure");
     const figcaption = document.createElement("figcaption");
     const degree = String.fromCharCode(176);
-    figcaption.textContent =  `${yearOrSeason[key]}` + degree + `F`;
+    figcaption.textContent = `${yearOrSeason[key]}` + degree + `F`;
 
     const test = Number(`${yearOrSeason[key]}`);
 
@@ -35,32 +35,31 @@ function buildSection(yearOrSeason, key, sectionId) {
 }
 
 function resultsYears() {
-
-    Object.keys(years).forEach(function(key) {
+    Object.keys(years).forEach(function (key) {
         buildSection(years, key, "annual");
     });
 }
 
 function resultsWinters() {
-    Object.keys(winters).forEach(function(key) {
+    Object.keys(winters).forEach(function (key) {
         buildSection(winters, key, "winter");
     });
 }
 
 function resultsSprings() {
-    Object.keys(springs).forEach(function(key) {
+    Object.keys(springs).forEach(function (key) {
         buildSection(springs, key, "spring");
     });
 }
 
 function resultsSummers() {
-    Object.keys(summers).forEach(function(key) {
+    Object.keys(summers).forEach(function (key) {
         buildSection(summers, key, "summer");
     });
 }
 
 function resultsFalls() {
-    Object.keys(falls).forEach(function(key) {
+    Object.keys(falls).forEach(function (key) {
         buildSection(falls, key, "fall");
     });
 }
