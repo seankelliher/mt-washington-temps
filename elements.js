@@ -1,4 +1,4 @@
-import {years, winters, springs, summers, falls} from './groups.js';
+import {years, winters, springs, summers, falls} from "./groups.js";
 
 function resultsYears() {
 
