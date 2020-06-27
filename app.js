@@ -4,7 +4,7 @@ import {
     resultsSprings,
     resultsSummers,
     resultsFalls
-} from './elements.js';
+} from "./elements.js";
 
 resultsYears();
 resultsWinters();
