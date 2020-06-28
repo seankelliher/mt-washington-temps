@@ -62,7 +62,7 @@ Temps.prototype.getFallAvg = function () {
     return sumDiv.toFixed(1);
 };
 
-const temps2005 = new Groupings(
+const temps2005 = new Temps(
     4.5,
     10.7,
     9.1,
@@ -77,7 +77,7 @@ const temps2005 = new Groupings(
     10.0
 );
 
-const temps2006 = new Groupings(
+const temps2006 = new Temps(
     16.0,
     2.1,
     11.4,
@@ -92,7 +92,7 @@ const temps2006 = new Groupings(
     15.0
 );
 
-const temps2007 = new Groupings(
+const temps2007 = new Temps(
     6.7,
     -3.1,
     12.9,
@@ -107,7 +107,7 @@ const temps2007 = new Groupings(
     8.7
 );
 
-const temps2008 = new Groupings(
+const temps2008 = new Temps(
     9.2,
     7.2,
     10.7,
@@ -122,7 +122,7 @@ const temps2008 = new Groupings(
     10.0
 );
 
-const temps2009 = new Groupings(
+const temps2009 = new Temps(
     0.0,
     8.2,
     15.3,
@@ -137,7 +137,7 @@ const temps2009 = new Groupings(
     9.4
 );
 
-const temps2010 = new Groupings(
+const temps2010 = new Temps(
     8.6,
     8.2,
     20.4,
@@ -152,7 +152,7 @@ const temps2010 = new Groupings(
     10.0
 );
 
-const temps2011 = new Groupings(
+const temps2011 = new Temps(
     3.5,
     5.2,
     11.0,
@@ -167,7 +167,7 @@ const temps2011 = new Groupings(
     16.3
 );
 
-const temps2012 = new Groupings(
+const temps2012 = new Temps(
     8.6,
     8.1,
     22.9,
@@ -182,7 +182,7 @@ const temps2012 = new Groupings(
     15.6
 );
 
-const temps2013 = new Groupings(
+const temps2013 = new Temps(
     6.4,
     5.8,
     12.5,
@@ -197,7 +197,7 @@ const temps2013 = new Groupings(
     8.8
 );
 
-const temps2014 = new Groupings(
+const temps2014 = new Temps(
     2.5,
     2.8,
     6.3,
@@ -212,7 +212,7 @@ const temps2014 = new Groupings(
     16.7
 );
 
-const temps2015 = new Groupings(
+const temps2015 = new Temps(
     1.2,
     -5.1,
     6.1,
@@ -227,7 +227,7 @@ const temps2015 = new Groupings(
     24.4
 );
 
-const temps2016 = new Groupings(
+const temps2016 = new Temps(
     7.9,
     8.6,
     17.5,
@@ -242,7 +242,7 @@ const temps2016 = new Groupings(
     8.4
 );
 
-const temps2017 = new Groupings(
+const temps2017 = new Temps(
     10.3,
     10.7,
     8.0,
@@ -257,7 +257,7 @@ const temps2017 = new Groupings(
     4.4
 );
 
-const temps2018 = new Groupings(
+const temps2018 = new Temps(
     7.4,
     12.9,
     11.8,
@@ -272,7 +272,7 @@ const temps2018 = new Groupings(
     11.3
 );
 
-const temps2019 = new Groupings(
+const temps2019 = new Temps(
     3.4,
     4.9,
     9.6,
