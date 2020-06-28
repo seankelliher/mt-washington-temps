@@ -34,6 +34,34 @@ Temps.prototype.getYearAvg = function () {
     return sumDiv.toFixed(1);
 };
 
+Temps.prototype.getWinterAvg = function () {
+    const winter = [this.dec, this.jan, this.feb];
+    const sum = winter.reduce((total, cv) => total + cv, 0);
+    const sumDiv = sum / 3;
+    return sumDiv.toFixed(1);
+};
+
+Temps.prototype.getSpringAvg = function () {
+    const spring = [this.mar, this.apr, this.may];
+    const sum = spring.reduce((total, cv) => total + cv, 0);
+    const sumDiv = sum / 3;
+    return sumDiv.toFixed(1);
+};
+
+Temps.prototype.getSummerAvg = function () {
+    const summer = [this.jun, this.jul, this.aug];
+    const sum = summer.reduce((total, cv) => total + cv, 0);
+    const sumDiv = sum / 3;
+    return sumDiv.toFixed(1);
+};
+
+Temps.prototype.getFallAvg = function () {
+    const fall = [this.sep, this.oct, this.nov];
+    const sum = fall.reduce((total, cv) => total + cv, 0);
+    const sumDiv = sum / 3;
+    return sumDiv.toFixed(1);
+};
+
 const temps2005 = new Groupings(
     4.5,
     10.7,
