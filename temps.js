@@ -13,65 +13,6 @@ function Temps(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) {
     this.dec = dec;
 }
 
-class Groupings extends Temps {
-    constructor(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) {
-        super(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec);
-    }
-
-    getWinterAvg() {
-        const winter = [this.dec, this.jan, this.feb];
-        const reducer = (total, currentValue) => total + currentValue;
-        const sum = winter.reduce(reducer);
-        const sumDiv = sum / 3;
-        return sumDiv.toFixed(1);
-    }
-
-    getSpringAvg() {
-        const spring = [this.mar, this.apr, this.may];
-        const reducer = (total, currentValue) => total + currentValue;
-        const sum = spring.reduce(reducer);
-        const sumDiv = sum / 3;
-        return sumDiv.toFixed(1);
-    }
-
-    getSummerAvg() {
-        const summer = [this.jun, this.jul, this.aug];
-        const reducer = (total, currentValue) => total + currentValue;
-        const sum = summer.reduce(reducer);
-        const sumDiv = sum / 3;
-        return sumDiv.toFixed(1);
-    }
-
-    getFallAvg() {
-        const fall = [this.sep, this.oct, this.nov];
-        const reducer = (total, currentValue) => total + currentValue;
-        const sum = fall.reduce(reducer);
-        const sumDiv = sum / 3;
-        return sumDiv.toFixed(1);
-    }
-
-    getYearAvg() {
-        const year = [
-            this.jan,
-            this.feb,
-            this.mar,
-            this.apr,
-            this.may,
-            this.jun,
-            this.jul,
-            this.aug,
-            this.sep,
-            this.oct,
-            this.nov,
-            this.dec
-        ];
-        const reducer = (total, currentValue) => total + currentValue;
-        const sum = year.reduce(reducer);
-        const sumDiv = sum / 12;
-        return sumDiv.toFixed(1);
-    }
-}
-
 const temps2005 = new Groupings(
     4.5,
     10.7,
