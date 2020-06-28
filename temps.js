@@ -1,18 +1,16 @@
-class Temps {
-    constructor(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) {
-        this.jan = jan;
-        this.feb = feb;
-        this.mar = mar;
-        this.apr = apr;
-        this.may = may;
-        this.jun = jun;
-        this.jul = jul;
-        this.aug = aug;
-        this.sep = sep;
-        this.oct = oct;
-        this.nov = nov;
-        this.dec = dec;
-    }
+function Temps(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) {
+    this.jan = jan;
+    this.feb = feb;
+    this.mar = mar;
+    this.apr = apr;
+    this.may = may;
+    this.jun = jun;
+    this.jul = jul;
+    this.aug = aug;
+    this.sep = sep;
+    this.oct = oct;
+    this.nov = nov;
+    this.dec = dec;
 }
 
 class Groupings extends Temps {
