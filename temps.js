@@ -13,6 +13,27 @@ function Temps(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) {
     this.dec = dec;
 }
 
+Temps.prototype.getYearAvg = function () {
+    const year = [
+        this.dec,
+        this.jan,
+        this.feb,
+        this.mar,
+        this.apr,
+        this.may,
+        this.jun,
+        this.jul,
+        this.aug,
+        this.sep,
+        this.oct,
+        this.nov
+    ];
+
+    const sum = year.reduce((total, cv) => total + cv, 0);
+    const sumDiv = sum / 12;
+    return sumDiv.toFixed(1);
+};
+
 const temps2005 = new Groupings(
     4.5,
     10.7,
