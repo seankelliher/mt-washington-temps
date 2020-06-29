@@ -18,10 +18,14 @@ header {
 }
 
 section {
-    width: 75%;
+    width: 95%;
     margin: 0 0 1em 0;
     padding: 1em 2.5%;
     flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
 }
 
 .year {
