@@ -39,6 +39,39 @@ figure {
     align-items: center; /*cross axis*/
 }
 
+/*Spans within figure*/
+.year {
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+.bar {
+    /*width set by JavaScript*/
+    margin: 0 2.5%;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+@media all and (min-width: 300px) {
+    .bar {
+        height: .75em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .bar {
+        height: 1em;
+    }
+}
+
+.temp {
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+    color: #F2441D; /*orange*/
+}
+
 /*Average Annual Temperatures*/
 #annual figure {
     background: #F2EDD5;
