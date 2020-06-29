@@ -28,32 +28,14 @@ section {
     align-items: flex-start; /*cross axis*/
 }
 
-.year {
+figure {
     width: 100%;
-    margin: .75em 0;
+    margin: .25em 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /*main axis*/
-    align-items: center; /*cross axis*/
-}
-
-.year-name {
-    width: 15%;
-    margin: 0;
-    padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
-}
-
-figure {
-    width: 18%;
-    margin: 0;
-    padding: 0 2% 0 0;
-    flex: initial; /*flex: 0 1 auto*/
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end; /*main axis*/
     align-items: center; /*cross axis*/
 }
 
