@@ -1,37 +1,40 @@
 import {years, winters, springs, summers, falls} from "./groups.js";
 
 function buildSection(yearOrSeason, key, sectionId) {
+
+    //Retrieve the correct section.
     const section = document.getElementById(sectionId);
 
-    const year = document.createElement("div");
-    year.className = "year";
-
-    const yearName = document.createElement("div");
-    yearName.className = "year-name";
-
-    const time = document.createElement("time");
-    time.textContent = key.substring(1, 5);
-
-    yearName.appendChild(time);
-    year.appendChild(yearName);
-
+    //Create elements needed.
     const figure = document.createElement("figure");
-    const figcaption = document.createElement("figcaption");
+    const year = document.createElement("span");
+    const bar = document.createElement("span");
+    const temp = document.createElement("span");
+
+    //Assign class names.
+    year.className = "year";
+    bar.className = "bar";
+    temp.className = "temp";
+
+    //Degree symbol (needed below).
     const degree = String.fromCharCode(176);
-    figcaption.textContent = `${yearOrSeason[key]}` + degree + `F`;
 
-    const test = Number(`${yearOrSeason[key]}`);
+    //Assign text.
+    year.textContent = key.substring(1, 5);
+    temp.textContent = `${yearOrSeason[key]}` + degree + `F`;
 
-    //85% space available.
-    //18% minimum needed for XX.X deg F characters. 2% padding right.
-    //65% available space for graph / 51.4 highest avg temp.
-    //Each degree gets 1.26% of space.
-    figure.style.width = (test * 1.26) + 18 + `%`;
+    //Set the bar width.
+    //70% space available.
+    //70 / 51.4 highest avg temp.
+    //Each degree gets 1.36% of space.
+    const barWidth = Number(`${yearOrSeason[key]}`);
+    bar.style.width = (barWidth * 1.36) + `%`;
 
-    figure.appendChild(figcaption);
-    year.appendChild(figure);
-    section.appendChild(year);
-    return;
+    //Append elements.
+    figure.appendChild(year);
+    figure.appendChild(bar);
+    figure.appendChild(temp);
+    section.appendChild(figure);
 }
 
 function resultsYears() {
