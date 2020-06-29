@@ -72,29 +72,30 @@ figure {
     color: #F2441D; /*orange*/
 }
 
+/*Background color for the .bar spans*/
 /*Average Annual Temperatures*/
-#annual figure {
-    background: #F2EDD5;
+#annual .bar {
+    background: #659DBF; /*medium blue*/
 }
 
 /*Average Winter Temperatures*/
-#winter figure {
-    background: #F2F2F2;
+#winter .bar {
+    background: #B8CAD9; /*grey*/
 }
 
 /*Average Spring Temperatures*/
-#spring figure {
-    background: #D5E5F2;
+#spring .bar {
+    background: #9CA64E; /*medium green*/
 }
 
 /*Average Summer Temperatures*/
-#summer figure {
-    background: #F2E7AC;
+#summer .bar {
+    background: #F2E18D; /*amber*/
 }
 
 /*Average Fall Temperatures*/
-#fall figure {
-    background: #F2E6DF;
+#fall .bar {
+    background: #A4A69C; /*brownish grey*/
 }
 
 /*figcaption and time in "Fonts" - below*/
