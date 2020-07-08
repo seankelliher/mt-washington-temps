@@ -8,7 +8,7 @@ Graphic that compiles and displays the average annual and seasonal temperatures 
 
 ## Deployment
 
-All you need is a web browser. Code works in a local or remote environment.
+All you need is a web browser. Code works in a local or remote environment. However, in a local environment, you may need to modify your browser's setting for local files.
 
 ## Built With
 
