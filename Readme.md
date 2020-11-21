@@ -1,28 +1,34 @@
-# Mt. Washington Temperatures
+[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/mt-washington-temperature?style=flat-square)](/LICENSE.txt)
+## Mt. Washington Temperature
 
-Graphic that compiles and displays the average annual and seasonal temperatures from the Mt. Washington Observatory, between 2005 - 2019. The Observatory is located on the summit of Mt. Washington (6,288 feet above sea level) in North Conway, New Hampshire.
+Annual and seasonal temperatures atop Mt. Washington, 2005 - 2019.
 
-## Authors
+## Project Screen Shot(s)
 
-* **Sean Kelliher** - [seankelliher](https://github.com/seankelliher)
+![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.jpg)
 
-## Deployment
+![screen shot of project](/screenshots/mt-washington-temperature-screenshot2.jpg)
 
-All you need is a web browser. Code works in a local or remote environment. However, in a local environment, you may need to modify your browser's setting for local files.
+![screen shot of project](/screenshots/mt-washington-temperature-screenshot3.jpg)
 
-## Built With
+## Installation and Setup Instructions
 
-* JavaScript
-* CSS
-* HTML
+This is a static component. All you need is a web browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions.
 
-## License
+## Reflection
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+For geography, Mt. Washington is the highest peak in the Northeastern United States. It is 6,288 ft (1916.6 m) above sea level and has an active weather station, the Mt. Washington Observatory, at the summit.
+
+I wanted to build a component that takes available temperature data from the Observatory, and compiles it into bar charts that display average temperatures by year and seasons (Winter, Spring, Summer, Fall) across a 15-year period (2005 - 2019).
+
+The Observatory does not have an API to draw data from. Instead, I downloaded the available data in a spreadsheet and build objects to store it. I then wrote "Vanilla JavaScript" that draws data from the objects, calculates the average temperatures, and forms the bars of the charts from it.
+
+One of the challenges, was building bar charts that maintained a consistent scale, but still remained readable. Temperatures atop Mt. Washington vary wildly throughout the year. I needed to calculate available screen space and temperature difference, and determine how much width to assign to each degree so Winter bars were not unreadable stubs and Summer bars did not go off the page.
 
 ## Acknowledgments
 
-* Readme file based on [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) by Billie Thompson.
-* Design guidance from Google's [Material Design](https://material.io/design).
+* Temperature data from the [Mt. Washington Observatory](https://www.mountwashington.org).
+* Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
+* Design guidance from Google's [Material Design](https://material.io/design) and [Adobe Color](https://color.adobe.com/trends).
 * Fonts from [Google Fonts](https://fonts.google.com).
-* Color guidance from [Adobe Color](https://color.adobe.com/create/color-wheel).
+* Shields from [Shields](https://shields.io).
