@@ -10,17 +10,17 @@
 }
 
 header {
-    width: 95%;
-    margin: 0;
-    padding: 1em 2.5%;
+    width: 90%;
+    margin: 0 0 1em 0;
+    padding: 1em 5%;
     flex: initial; /*flex: 0 1 auto*/
     border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
 section {
-    width: 95%;
+    width: 90%;
     margin: 0 0 1em 0;
-    padding: 1em 2.5%;
+    padding: 1em 5%;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
@@ -99,9 +99,9 @@ figure {
 }
 
 footer {
-    width: 95%;
-    margin: 0;
-    padding: 1em 2.5%;
+    width: 90%;
+    margin: 0 0 1em 0;
+    padding: 1em 5%;
     flex: initial; /*flex: 0 1 auto*/
     border-top: 1px solid #EEE; /*grey 200*/
 }
