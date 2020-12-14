@@ -1,3 +1,6 @@
+//Import the "group" objects from groups.js.
+//Loop through them to create elements on page.
+
 import {years, winters, springs, summers, falls} from "./groups.js";
 
 function buildSection(yearOrSeason, key, sectionId) {

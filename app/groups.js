@@ -1,3 +1,7 @@
+//Invoke constructor functions in temps.js.
+//Store results in five larger "group" objects:
+//years, winter, spring, summer, fall.
+
 import {
     temps2005,
     temps2006,

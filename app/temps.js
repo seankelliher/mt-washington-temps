@@ -1,3 +1,8 @@
+//Constructor functions to create objects for:
+//Average annual and seasonal temperatures, 2005 - 2019.
+//These are invoked in the groups.js file.
+//In JSLint, you'll need to "tolerate: this".
+
 function Temps(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) {
     this.jan = jan;
     this.feb = feb;
