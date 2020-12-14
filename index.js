@@ -1,13 +1,19 @@
+//After DOMContentLoaded, invoke functions in elements.js.
+
 import {
     resultsYears,
     resultsWinters,
     resultsSprings,
     resultsSummers,
     resultsFalls
-} from "./elements.js";
+} from "./app/elements.js";
 
-resultsYears();
-resultsWinters();
-resultsSprings();
-resultsSummers();
-resultsFalls();
+document.addEventListener("DOMContentLoaded", function () {
+    "use strict";
+
+    resultsYears();
+    resultsWinters();
+    resultsSprings();
+    resultsSummers();
+    resultsFalls();
+});
