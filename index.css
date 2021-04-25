@@ -80,11 +80,6 @@ section {
     flex-flow: row wrap;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
-    border-top: 1px solid #EEE; /*grey 200*/
-}
-
-section:nth-child(3) {
-    border-top: none;
 }
 
 figure {
