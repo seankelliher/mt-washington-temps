@@ -27,9 +27,9 @@ One of the challenges, was building bar charts that maintained a consistent scal
 
 ## Acknowledgments
 
-* Temperature data from the [Mt. Washington Observatory](https://www.mountwashington.org).
+* Temperature data from the [Mt. Washington Observatory](https://www.mountwashington.org/experience-the-weather/mount-washington-weather-archives/monthly-f6.aspx).
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * JavaScript guidance from [JSLint](http://jslint.com).
-* Design guidance from Google's [Material Design](https://material.io/design) and [Adobe Color](https://color.adobe.com/trends).
+* Design guidance from Google's [Material Design](https://material.io/design).
 * Fonts from [Google Fonts](https://fonts.google.com).
 * Shields from [Shields](https://shields.io).
