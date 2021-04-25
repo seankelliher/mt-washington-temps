@@ -63,12 +63,7 @@ button {
     padding: .25em 0;
     flex: initial; /*flex: 0 1 auto*/
     border: 1px solid #FFF;
-    background: #F5F5F5; /*grey 100*/
     cursor: pointer;
-}
-
-button:hover {
-    background: #EEE; /*grey 200*/
 }
 
 section {
@@ -123,33 +118,33 @@ figure {
     margin: 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
-    color: #F2441D; /*orange*/
+    color: #62757f; /*blue grey 300 dark*/
 }
 
 /*Background color for the .bar spans*/
 /*Average Annual Temperatures*/
 #annual .bar {
-    background: #659DBF; /*medium blue*/
+    background: #29b6F6; /*light blue 400*/
 }
 
 /*Average Winter Temperatures*/
 #winter .bar {
-    background: #B8CAD9; /*grey*/
+    background: #CFD8DC; /*blue grey 100*/
 }
 
 /*Average Spring Temperatures*/
 #spring .bar {
-    background: #9CA64E; /*medium green*/
+    background: #9CCC65; /*light green 400*/
 }
 
 /*Average Summer Temperatures*/
 #summer .bar {
-    background: #F2E18D; /*amber*/
+    background: #FFE082; /*amber 200*/
 }
 
 /*Average Fall Temperatures*/
 #fall .bar {
-    background: #A4A69C; /*brownish grey*/
+    background: #D7CCC8; /*brown 100*/
 }
 
 footer {
