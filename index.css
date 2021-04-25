@@ -67,8 +67,8 @@ button {
     cursor: pointer;
 }
 
-.selected {
-    background: #B8CAD9; /*grey*/
+button:hover {
+    background: #EEE; /*grey 200*/
 }
 
 section {
