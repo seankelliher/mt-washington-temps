@@ -46,6 +46,31 @@ header::after {
     border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
+nav {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+}
+
+button {
+    width: 20%;
+    margin: 0;
+    padding: .25em 0;
+    flex: initial; /*flex: 0 1 auto*/
+    border: 1px solid #FFF;
+    background: #F5F5F5; /*grey 100*/
+    cursor: pointer;
+}
+
+.selected {
+    background: #B8CAD9; /*grey*/
+}
+
 section {
     width: 90%;
     margin: 0 0 1em 0;
@@ -58,7 +83,7 @@ section {
     border-top: 1px solid #EEE; /*grey 200*/
 }
 
-section:nth-child(2) {
+section:nth-child(3) {
     border-top: none;
 }
 
@@ -141,7 +166,7 @@ footer {
 }
 
 /*Fonts*/
-.year, .temp {
+.year, .temp, button {
     font-family: 'Roboto', serif;
     line-height: 1.5;
     font-weight: 400;
@@ -167,7 +192,7 @@ h2 {
 
 /*Media queries for fonts*/
 @media all and (min-width: 300px) {
-    .year, .temp {
+    .year, .temp, button {
         font-size: .75em; /*12 pixels*/
     }
 
@@ -185,7 +210,7 @@ h2 {
 }
 
 @media all and (min-width: 600px) {
-    .year, .temp {
+    .year, .temp, button {
         font-size: .8125em; /*13 pixels*/
     }
 
