@@ -40,7 +40,7 @@ function buildSection(yearOrSeason, key, sectionId) {
     section.appendChild(figure);
 }
 
-function resultsYears() {
+function resultsAnnuals() {
     Object.keys(years).forEach(function (key) {
         buildSection(years, key, "annual");
     });
@@ -71,7 +71,7 @@ function resultsFalls() {
 }
 
 export {
-    resultsYears,
+    resultsAnnuals,
     resultsWinters,
     resultsSprings,
     resultsSummers,
