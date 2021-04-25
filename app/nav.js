@@ -18,7 +18,7 @@ function monitorNav() {
     const nav = document.querySelector("nav");
 
     //Monitor it for clicks.
-    nav.addEventListener("click", function(event) {
+    nav.addEventListener("click", function (event) {
 
         //Get sections. Convert to "real" array.
         const sects = document.querySelectorAll("section");
@@ -38,19 +38,19 @@ function monitorNav() {
 
         //Modify the button's background color.
         if (buttonText === "annual") {
-            button.style.background = "#659DBF"; //medium blue.
+            button.style.background = "#29b6F6"; //light blue 400.
         }
         if (buttonText === "winter") {
-            button.style.background = "#B8CAD9"; //grey.
+            button.style.background = "#CFD8DC"; //blue grey 100.
         }
         if (buttonText === "spring") {
-            button.style.background = "#9CA64E"; //medium green.
+            button.style.background = "#9CCC65"; //light green 400.
         }
         if (buttonText === "summer") {
-            button.style.background = "#F2E18D"; //amber.
+            button.style.background = "#FFE082"; //amber 200.
         }
         if (buttonText === "fall") {
-            button.style.background = "#A4A69C"; //brownish grey.
+            button.style.background = "#D7CCC8"; //brown 100.
         }
 
         //Display the matching section.
