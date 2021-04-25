@@ -1,3 +1,16 @@
+function resetNav() {
+    "use strict";
+
+    //Get buttons. Convert to "real" array.
+    const buttons = document.querySelectorAll("button");
+    const buttonsArray = Array.from(buttons);
+
+    //Reset button color to default.
+    buttonsArray.forEach(function (btn) {
+        btn.style.background = "#F5F5F5"; //grey 100.
+    });
+}
+
 function monitorNav() {
     "use strict";
 
@@ -19,6 +32,9 @@ function monitorNav() {
         //Get the clicked button's textContent. Make lower case.
         const button = event.target;
         const buttonText = button.textContent.toLowerCase();
+
+        //Invoke above function, resets button background color.
+        resetNav();
 
         //Modify the button's background color.
         if (buttonText === "annual") {
