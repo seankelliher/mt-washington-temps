@@ -7,6 +7,7 @@ import {
     resultsSummers,
     resultsFalls
 } from "./app/elements.js";
+import {monitorNav} from "./app/nav.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
@@ -16,4 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
     resultsSprings();
     resultsSummers();
     resultsFalls();
+    monitorNav();
+
+    //Get first button ("annual"). Simulate click.
+    const first = document.querySelector("button");
+    first.click();
 });
