@@ -1,7 +1,7 @@
 //After DOMContentLoaded, invoke functions in elements.js.
 
 import {
-    resultsYears,
+    resultsAnnuals,
     resultsWinters,
     resultsSprings,
     resultsSummers,
@@ -11,7 +11,7 @@ import {
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
 
-    resultsYears();
+    resultsAnnuals();
     resultsWinters();
     resultsSprings();
     resultsSummers();
