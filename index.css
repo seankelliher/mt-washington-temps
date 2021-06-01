@@ -183,36 +183,50 @@ h2 {
 /*Media queries for fonts*/
 @media all and (min-width: 300px) {
     .year, .temp, button {
-        font-size: .75em; /*12 pixels*/
+        font-size: .75em;
     }
 
     p, li {
-        font-size: .9375em; /*15 pixels*/
+        font-size: .875em;
     }
 
     h1 {
-        font-size: 1.4375em; /*23 pixels*/
+        font-size: 1.2em;
     }
 
     h2 {
-        font-size: 1.0625em; /*17 pixels*/
+        font-size: 1em;
+    }
+}
+
+@media all and (min-width: 400px) {
+    p, li {
+        font-size: .9375em;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 1.2em;
     }
 }
 
 @media all and (min-width: 600px) {
     .year, .temp, button {
-        font-size: .8125em; /*13 pixels*/
+        font-size: .8125em;
     }
 
     p, li {
-        font-size: 1em; /*16 pixels*/
+        font-size: 1em;
     }
 
     h1 {
-        font-size: 1.5em; /*24 pixels*/
+        font-size: 1.6em;
     }
 
     h2 {
-        font-size: 1.125em; /*18 pixels*/
+        font-size: 1.4em;
     }
 }
