@@ -6,10 +6,10 @@ Annual and seasonal temperatures atop Mt. Washington, 2005 - 2020.
 ## Project Screen Shot(s)
 
 * Starting view - Annual Temperatures.
-![screen shot of project](/screenshots/mt-washington-temperature1.png?s=600)
+![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.png?s=600)
 
 * View with Spring Temperatures.
-![screen shot of project](/screenshots/mt-washington-temperature2.png?s=600)
+![screen shot of project](/screenshots/mt-washington-temperature-screenshot2.png?s=600)
 
 ## Installation and Setup Instructions
 
