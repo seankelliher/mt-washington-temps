@@ -10,101 +10,101 @@ body {
     padding: 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 header {
     width: 90%;
-    margin: 0 0 1em 0;
+    margin: 0 0 1em; /* longhand is 0 0 1em 0 */
     padding: 1em 5%;
-    flex: initial; /*flex: 0 1 auto*/
-    background: #FAFAFA; /*grey 50*/
-    border-bottom: 1px solid #EEE; /*grey 200*/
-    position:  relative;
+    flex: initial; /* flex: 0 1 auto */
+    background: #fafafa; /* grey 50 */
+    border-bottom: 1px solid #eee; /* grey 200 */
+    position: relative;
 }
 
 header::before {
-    content:  "";
+    content: "";
     position: absolute;
     top: 0;
     bottom: -1px;
     width: 1200px;
     left: 100%;
-    background: #FAFAFA; /*grey 50*/
-    border-bottom: 1px solid #EEE; /*grey 200*/
+    background: #fafafa; /* grey 50 */
+    border-bottom: 1px solid #eee; /* grey 200 */
 }
 
 header::after {
-    content:  "";
+    content: "";
     position: absolute;
     top: 0;
     bottom: -1px;
     width: 1200px;
     right: 100%;
-    background: #FAFAFA; /*grey 50*/
-    border-bottom: 1px solid #EEE; /*grey 200*/
+    background: #fafafa; /* grey 50 */
+    border-bottom: 1px solid #eee; /* grey 200 */
 }
 
 nav {
     width: 90%;
     margin: 0;
     padding: 0 5%;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 button {
     width: 20%;
     margin: 0;
-    padding: .25em 0;
-    flex: initial; /*flex: 0 1 auto*/
-    border: 1px solid #FFF;
+    padding: 0.25em 0;
+    flex: initial; /* flex: 0 1 auto */
+    border: 1px solid #fff;
     cursor: pointer;
 }
 
 section {
     width: 90%;
-    margin: 0 0 1em 0;
+    margin: 0 0 1em; /* longform is 0 0 1em 0 */
     padding: 1em 5%;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 figure {
     width: 100%;
-    margin: .25em 0;
+    margin: 0.25em 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: center; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: center; /* cross axis */
 }
 
-/*Spans within figure*/
+/* Spans within figure */
 .year {
     margin: 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
 }
 
 .bar {
-    /*width set by JavaScript*/
+    /* width set by JavaScript */
     margin: 0 2.5%;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
 }
 
 @media all and (min-width: 300px) {
     .bar {
-        height: .75em;
+        height: 0.75em;
     }
 }
 
@@ -117,52 +117,56 @@ figure {
 .temp {
     margin: 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
-    color: #62757f; /*blue grey 300 dark*/
+    flex: initial; /* flex: 0 1 auto */
+    color: #62757f; /* blue grey 300 dark */
 }
 
-/*Background color for the .bar spans*/
-/*Average Annual Temperatures*/
+/* Background color for the .bar spans */
+
+/* Average Annual Temperatures */
 #annual .bar {
-    background: #29b6F6; /*light blue 400*/
+    background: #29b6f6; /* light blue 400 */
 }
 
-/*Average Winter Temperatures*/
+/* Average Winter Temperatures */
 #winter .bar {
-    background: #CFD8DC; /*blue grey 100*/
+    background: #cfd8dc; /* blue grey 100 */
 }
 
-/*Average Spring Temperatures*/
+/* Average Spring Temperatures */
 #spring .bar {
-    background: #9CCC65; /*light green 400*/
+    background: #9ccc65; /* light green 400 */
 }
 
-/*Average Summer Temperatures*/
+/* Average Summer Temperatures */
 #summer .bar {
-    background: #FFE082; /*amber 200*/
+    background: #ffe082; /* amber 200 */
 }
 
-/*Average Fall Temperatures*/
+/* Average Fall Temperatures */
 #fall .bar {
-    background: #D7CCC8; /*brown 100*/
+    background: #d7ccc8; /* brown 100 */
 }
 
 footer {
     width: 90%;
-    margin: 0 0 1em 0;
+    margin: 0 0 1em; /* longhand is 0 0 1em 0 */
     padding: 1em 5%;
-    flex: initial; /*flex: 0 1 auto*/
-    border-top: 1px solid #EEE; /*grey 200*/
+    flex: initial; /* flex: 0 1 auto */
+    border-top: 1px solid #eee; /* grey 200 */
 }
 
-/*Fonts*/
-.year, .temp, button {
+/* Fonts */
+.year,
+.temp,
+button {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
 }
 
-p, li {
+p,
+li {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.8;
     font-weight: 400;
@@ -180,14 +184,17 @@ h2 {
     font-weight: 700;
 }
 
-/*Media queries for fonts*/
+/* Media queries for fonts */
 @media all and (min-width: 300px) {
-    .year, .temp, button {
-        font-size: .75em;
+    .year,
+    .temp,
+    button {
+        font-size: 0.75em;
     }
 
-    p, li {
-        font-size: .875em;
+    p,
+    li {
+        font-size: 0.875em;
     }
 
     h1 {
@@ -200,8 +207,9 @@ h2 {
 }
 
 @media all and (min-width: 400px) {
-    p, li {
-        font-size: .9375em;
+    p,
+    li {
+        font-size: 0.9375em;
     }
 
     h1 {
@@ -214,11 +222,14 @@ h2 {
 }
 
 @media all and (min-width: 600px) {
-    .year, .temp, button {
-        font-size: .8125em;
+    .year,
+    .temp,
+    button {
+        font-size: 0.8125em;
     }
 
-    p, li {
+    p,
+    li {
         font-size: 1em;
     }
 
