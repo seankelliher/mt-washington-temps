@@ -18,7 +18,7 @@ import {
     temps2017,
     temps2018,
     temps2019,
-    temps2020
+    temps2020,
 } from "./temps.js";
 
 const years = {
@@ -37,7 +37,7 @@ const years = {
     y2017: temps2017.getYearAvg(),
     y2018: temps2018.getYearAvg(),
     y2019: temps2019.getYearAvg(),
-    y2020: temps2020.getYearAvg()
+    y2020: temps2020.getYearAvg(),
 };
 
 const winters = {
@@ -56,7 +56,7 @@ const winters = {
     y2017: temps2017.getWinterAvg(),
     y2018: temps2018.getWinterAvg(),
     y2019: temps2019.getWinterAvg(),
-    y2020: temps2020.getWinterAvg()
+    y2020: temps2020.getWinterAvg(),
 };
 
 const springs = {
@@ -75,7 +75,7 @@ const springs = {
     y2017: temps2017.getSpringAvg(),
     y2018: temps2018.getSpringAvg(),
     y2019: temps2019.getSpringAvg(),
-    y2020: temps2020.getSpringAvg()
+    y2020: temps2020.getSpringAvg(),
 };
 
 const summers = {
@@ -94,7 +94,7 @@ const summers = {
     y2017: temps2017.getSummerAvg(),
     y2018: temps2018.getSummerAvg(),
     y2019: temps2019.getSummerAvg(),
-    y2020: temps2020.getSummerAvg()
+    y2020: temps2020.getSummerAvg(),
 };
 
 const falls = {
@@ -113,7 +113,7 @@ const falls = {
     y2017: temps2017.getFallAvg(),
     y2018: temps2018.getFallAvg(),
     y2019: temps2019.getFallAvg(),
-    y2020: temps2020.getFallAvg()
+    y2020: temps2020.getFallAvg(),
 };
 
 export {years, winters, springs, summers, falls};

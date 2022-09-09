@@ -75,5 +75,5 @@ export {
     resultsWinters,
     resultsSprings,
     resultsSummers,
-    resultsFalls
+    resultsFalls,
 };
