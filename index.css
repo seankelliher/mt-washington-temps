@@ -15,12 +15,11 @@ body {
 }
 
 header {
-    width: 90%;
-    margin: 0 0 1em; /* longhand is 0 0 1em 0 */
-    padding: 1em 5%;
+    width: 95%;
+    margin: 0;
+    padding: 0 2.5%;
     flex: initial; /* flex: 0 1 auto */
-    background: #fafafa; /* grey 50 */
-    border-bottom: 1px solid #eee; /* grey 200 */
+    background: #06080d; /* very dark blue */
     position: relative;
 }
 
@@ -28,48 +27,61 @@ header::before {
     content: "";
     position: absolute;
     top: 0;
-    bottom: -1px;
+    bottom: 0;
     width: 1200px;
     left: 100%;
-    background: #fafafa; /* grey 50 */
-    border-bottom: 1px solid #eee; /* grey 200 */
+    background: #06080d; /* very dark blue */
 }
 
 header::after {
     content: "";
     position: absolute;
     top: 0;
-    bottom: -1px;
+    bottom: 0;
     width: 1200px;
     right: 100%;
-    background: #fafafa; /* grey 50 */
-    border-bottom: 1px solid #eee; /* grey 200 */
+    background: #06080d; /* very dark blue */
 }
 
 nav {
-    width: 90%;
-    margin: 0;
-    padding: 0 5%;
+    width: 95%;
+    margin: 1.5em 0;
+    padding: 0 2.5%;
     flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /* main axis */
+    justify-content: space-between; /* main axis */
     align-items: flex-start; /* cross axis */
 }
 
 button {
-    width: 20%;
+    width: 19%;
     margin: 0;
     padding: 0.25em 0;
     flex: initial; /* flex: 0 1 auto */
-    border: 1px solid #fff;
+    background: #06080d; /* very dark blue */
+    color: #fff;
+    border: none;
     cursor: pointer;
 }
 
-section {
+.selected {
+    background: #1d8ff2; /* royal blue */
+}
+
+aside {
     width: 90%;
+    margin: 0 2.5%;
+    padding: 0 2.5%;
+    background: #f2f1f0; /* light warm grey */
+    border: 1px solid #d9d8d0; /* medium warm grey */
+    flex: initial; /* flex: 0 1 auto */
+}
+
+section {
+    width: 95%;
     margin: 0 0 1em; /* longform is 0 0 1em 0 */
-    padding: 1em 5%;
+    padding: 1em 2.5%;
     flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
@@ -79,7 +91,7 @@ section {
 
 figure {
     width: 100%;
-    margin: 0.25em 0;
+    margin: 0.4em 0;
     padding: 0;
     flex: initial; /* flex: 0 1 auto */
     display: flex;
@@ -97,8 +109,9 @@ figure {
 
 .bar {
     /* width set by JavaScript */
-    margin: 0 2.5%;
+    margin: 0 0.25em;
     padding: 0;
+    background: #4abf2a; /* bright green */
     flex: initial; /* flex: 0 1 auto */
 }
 
@@ -114,6 +127,20 @@ figure {
     }
 }
 
+.bar-action {
+    animation: bar-fade  800ms;
+}
+
+@keyframes bar-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .temp {
     margin: 0;
     padding: 0;
@@ -121,39 +148,12 @@ figure {
     color: #62757f; /* blue grey 300 dark */
 }
 
-/* Background color for the .bar spans */
-
-/* Average Annual Temperatures */
-#annual .bar {
-    background: #29b6f6; /* light blue 400 */
-}
-
-/* Average Winter Temperatures */
-#winter .bar {
-    background: #cfd8dc; /* blue grey 100 */
-}
-
-/* Average Spring Temperatures */
-#spring .bar {
-    background: #9ccc65; /* light green 400 */
-}
-
-/* Average Summer Temperatures */
-#summer .bar {
-    background: #ffe082; /* amber 200 */
-}
-
-/* Average Fall Temperatures */
-#fall .bar {
-    background: #d7ccc8; /* brown 100 */
-}
-
 footer {
-    width: 90%;
+    width: 95%;
     margin: 0 0 1em; /* longhand is 0 0 1em 0 */
-    padding: 1em 5%;
+    padding: 1em 2.5%;
+    border-top: 1px solid #d9d8d0; /* medium warm grey */
     flex: initial; /* flex: 0 1 auto */
-    border-top: 1px solid #eee; /* grey 200 */
 }
 
 /* Fonts */
@@ -162,7 +162,7 @@ footer {
 button {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 p,
@@ -176,6 +176,7 @@ h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 700;
+    color: #fff;
 }
 
 h2 {
