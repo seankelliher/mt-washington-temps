@@ -1,11 +1,11 @@
-//After DOMContentLoaded, invoke functions in elements.js.
+// After DOMContentLoaded, invoke functions in elements.js.
 
 import {
     resultsAnnuals,
     resultsWinters,
     resultsSprings,
     resultsSummers,
-    resultsFalls
+    resultsFalls,
 } from "./app/elements.js";
 import {monitorNav} from "./app/nav.js";
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     resultsFalls();
     monitorNav();
 
-    //Get first button ("annual"). Simulate click.
+    // Get first button ("annual"). Simulate click.
     const first = document.querySelector("button");
     first.click();
 });
