@@ -5,11 +5,8 @@ Annual and seasonal temperatures atop Mt. Washington, 2005 - 2021.
 
 ## Project Screen Shot(s)
 
-* Starting view - Annual Temperatures.
+* View with Summer Temperatures.
 ![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.png?s=600)
-
-* View with Spring Temperatures.
-![screen shot of project](/screenshots/mt-washington-temperature-screenshot2.png?s=600)
 
 ## Installation and Setup Instructions
 
@@ -30,5 +27,5 @@ One of the challenges, was building bar charts that maintained a consistent scal
 * Temperature data from the [Mt. Washington Observatory](https://www.mountwashington.org/experience-the-weather/mount-washington-weather-archives/monthly-f6.aspx).
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * Linting guidance from [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io).
-* Design guidance from Google's [Material Design](https://material.io/design).
+* Design guidance from Google's [Material Design](https://material.io/design) and [Adobe Color](https://color.adobe.com/create/color-wheel).
 * Shields from [Shields](https://shields.io).
