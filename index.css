@@ -112,6 +112,7 @@ figure {
     margin: 0 0.25em;
     padding: 0;
     background: #4abf2a; /* bright green */
+    background: #45B327;
     flex: initial; /* flex: 0 1 auto */
 }
 
