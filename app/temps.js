@@ -31,7 +31,7 @@ Temps.prototype.getYearAvg = function () {
         this.aug,
         this.sep,
         this.oct,
-        this.nov,
+        this.nov
     ];
 
     const sum = year.reduce((total, cv) => total + cv, 0);
@@ -79,7 +79,7 @@ const temps2005 = new Temps(
     45.4,
     35.3,
     21.6,
-    10.0,
+    10.0
 );
 
 const temps2006 = new Temps(
@@ -94,7 +94,7 @@ const temps2006 = new Temps(
     40.3,
     29.3,
     29.8,
-    15.0,
+    15.0
 );
 
 const temps2007 = new Temps(
@@ -109,7 +109,7 @@ const temps2007 = new Temps(
     44.5,
     36.9,
     17.1,
-    8.7,
+    8.7
 );
 
 const temps2008 = new Temps(
@@ -124,7 +124,7 @@ const temps2008 = new Temps(
     44.0,
     29.8,
     18.8,
-    10.0,
+    10.0
 );
 
 const temps2009 = new Temps(
@@ -139,7 +139,7 @@ const temps2009 = new Temps(
     41.9,
     27.5,
     27.7,
-    9.4,
+    9.4
 );
 
 const temps2010 = new Temps(
@@ -154,7 +154,7 @@ const temps2010 = new Temps(
     42.6,
     27.7,
     22.5,
-    10.0,
+    10.0
 );
 
 const temps2011 = new Temps(
@@ -169,7 +169,7 @@ const temps2011 = new Temps(
     45.5,
     31.9,
     27.1,
-    16.3,
+    16.3
 );
 
 const temps2012 = new Temps(
@@ -184,7 +184,7 @@ const temps2012 = new Temps(
     41.9,
     34.6,
     20.9,
-    15.6,
+    15.6
 );
 
 const temps2013 = new Temps(
@@ -199,7 +199,7 @@ const temps2013 = new Temps(
     41.5,
     33.1,
     16.3,
-    8.8,
+    8.8
 );
 
 const temps2014 = new Temps(
@@ -214,7 +214,7 @@ const temps2014 = new Temps(
     42.5,
     34.0,
     16.3,
-    16.7,
+    16.7
 );
 
 const temps2015 = new Temps(
@@ -229,7 +229,7 @@ const temps2015 = new Temps(
     49.3,
     28.7,
     24.6,
-    24.4,
+    24.4
 );
 
 const temps2016 = new Temps(
@@ -244,7 +244,7 @@ const temps2016 = new Temps(
     44.7,
     34.3,
     25.2,
-    8.4,
+    8.4
 );
 
 const temps2017 = new Temps(
@@ -259,7 +259,7 @@ const temps2017 = new Temps(
     46.9,
     39.5,
     19.7,
-    4.4,
+    4.4
 );
 
 const temps2018 = new Temps(
@@ -274,7 +274,7 @@ const temps2018 = new Temps(
     45.8,
     29.5,
     15.5,
-    11.3,
+    11.3
 );
 
 const temps2019 = new Temps(
@@ -289,7 +289,7 @@ const temps2019 = new Temps(
     41.6,
     34.9,
     16.2,
-    12.6,
+    12.6
 );
 
 const temps2020 = new Temps(
@@ -304,7 +304,7 @@ const temps2020 = new Temps(
     43.2,
     31.4,
     26.3,
-    14.6,
+    14.6
 );
 
 const temps2021 = new Temps(
@@ -319,7 +319,7 @@ const temps2021 = new Temps(
     43.1,
     38.4,
     18.4,
-    14.7,
+    14.7
 );
 
 export {
@@ -339,5 +339,5 @@ export {
     temps2018,
     temps2019,
     temps2020,
-    temps2021,
+    temps2021
 };

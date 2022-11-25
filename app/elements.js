@@ -24,14 +24,14 @@ function buildSection(yearOrSeason, key, sectionId) {
 
     // Assign text.
     year.textContent = key.substring(1, 5);
-    temp.textContent = `${yearOrSeason[key]}` + degree + `F`;
+    temp.textContent = `${yearOrSeason[key]} ${degree} F`;
 
     // Set the bar width.
     // approximately 75% space available for bars.
     // 75 / 51.4 highest avg temp.
     // Each degree gets 1.46% of space.
     const barWidth = Number(`${yearOrSeason[key]}`);
-    bar.style.width = (barWidth * 1.46) + `%`;
+    bar.style.width = (barWidth * 1.46) + "%";
 
     // Add class for animation, bars fade in.
     bar.classList.add("bar-action");
@@ -78,5 +78,5 @@ export {
     resultsWinters,
     resultsSprings,
     resultsSummers,
-    resultsFalls,
+    resultsFalls
 };

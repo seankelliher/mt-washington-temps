@@ -5,7 +5,7 @@ import {
     resultsWinters,
     resultsSprings,
     resultsSummers,
-    resultsFalls,
+    resultsFalls
 } from "./app/elements.js";
 import {monitorNav} from "./app/nav.js";
 
