@@ -1,7 +1,7 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/mt-washington-temperature?style=flat-square)](/LICENSE.md)
 ## Mt. Washington Temperature
 
-Annual and seasonal temperatures atop Mt. Washington, 2005 - 2021.
+Annual and seasonal temperatures atop Mt. Washington, 2005 - 2021. [View working component](https://seankelliher.github.io/mt-washington-temperature/).
 
 ## Project Screen Shot(s)
 
