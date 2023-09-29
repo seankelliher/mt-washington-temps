@@ -9,7 +9,7 @@ Annual and seasonal temperatures atop Mt. Washington, 2005 - 2022. [View working
 ![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.png?s=600)
 
 * View with Summer Temperatures.
-![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.png?s=600)
+![screen shot of project](/screenshots/mt-washington-temperature-screenshot2.png?s=600)
 
 ## Installation and Setup Instructions
 
