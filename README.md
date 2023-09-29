@@ -1,9 +1,12 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/mt-washington-temperature?style=flat-square)](/LICENSE.md)
 ## Mt. Washington Temperature
 
-Annual and seasonal temperatures atop Mt. Washington, 2005 - 2021. [View working component](https://seankelliher.github.io/mt-washington-temperature/).
+Annual and seasonal temperatures atop Mt. Washington, 2005 - 2022. [View working component](https://seankelliher.github.io/mt-washington-temperature/).
 
 ## Project Screen Shot(s)
+
+* View with Annual Temperatures.
+![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.png?s=600)
 
 * View with Summer Temperatures.
 ![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.png?s=600)
@@ -16,7 +19,7 @@ This is a static component. Simply open the `index.html` file in your browser. H
 
 For geography, Mt. Washington is the highest peak in the Northeastern United States. It is 6,288 ft (1916.6 m) above sea level and has an active weather station, the Mt. Washington Observatory, at the summit.
 
-I wanted to build a component that takes available temperature data from the Observatory, and compiles it into bar charts that display average temperatures by year and seasons (Winter, Spring, Summer, Fall) across a 17-year period (2005 - 2021).
+I wanted to build a component that takes available temperature data from the Observatory, and compiles it into bar charts that display average temperatures by year and seasons (Winter, Spring, Summer, Fall) across a 18-year period (2005 - 2022).
 
 The Observatory does not have an API to draw data from. Instead, I downloaded the available data in a spreadsheet and build objects to store it. I then wrote "Vanilla JavaScript" that draws data from the objects, calculates the average temperatures, and forms the bars of the charts from it.
 
