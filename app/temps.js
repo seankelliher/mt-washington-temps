@@ -322,6 +322,21 @@ const temps2021 = new Temps(
     14.7
 );
 
+const temps2022 = new Temps(
+    2.2,
+    8.1,
+    14.1,
+    23.2,
+    40.4,
+    43.4,
+    50.0,
+    51.7,
+    42.8,
+    37.7,
+    23.9,
+    14.2
+);
+
 export {
     temps2005,
     temps2006,
@@ -339,5 +354,6 @@ export {
     temps2018,
     temps2019,
     temps2020,
-    temps2021
+    temps2021,
+    temps2022
 };
