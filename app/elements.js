@@ -27,11 +27,11 @@ function buildSection(yearOrSeason, key, sectionId) {
     temp.textContent = `${yearOrSeason[key]} ${degree} F`;
 
     // Set the bar width.
-    // approximately 75% space available for bars.
-    // 75 / 51.4 highest avg temp.
-    // Each degree gets 1.46% of space.
+    // approximately 72% space available for bars.
+    // 72 / 51.4 highest avg temp.
+    // Each degree gets 1.4% of space.
     const barWidth = Number(`${yearOrSeason[key]}`);
-    bar.style.width = (barWidth * 1.46) + "%";
+    bar.style.width = (barWidth * 1.4) + "%";
 
     // Add class for animation, bars fade in.
     bar.classList.add("bar-action");
