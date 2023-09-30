@@ -165,16 +165,6 @@ figure {
     }
 }
 
-footer {
-    width: 95%;
-    margin: 0 0 1em; /* longhand is 0 0 1em 0 */
-    padding: 1em 2.5%;
-    background: #fcfcff;
-    border: 1px solid #dde3ea;
-    border-radius: 8px;
-    flex: initial; /* flex: 0 1 auto */
-}
-
 /* Fonts */
 span {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
