@@ -99,7 +99,7 @@ figure {
     padding: 0;
     flex: initial; /* flex: 0 1 auto */
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start; /* main axis */
     align-items: center; /* cross axis */
 }
@@ -130,24 +130,28 @@ figure {
 @media (width >= 300px) and (width <= 399px) {
     .bar {
         height: 0.75em; /* 12px */
+        min-height: 12px; /* fixes bug in Safari where bar collapses */
     }
 }
 
 @media (width >= 400px) and (width <= 499px) {
     .bar {
         height: 0.8125em; /* 13px */
+        min-height: 13px;
     }
 }
 
 @media (width >= 500px) and (width <= 599px) {
     .bar {
         height: 0.875em; /* 14px */
+        min-height: 14px;
     }
 }
 
 @media (width >= 600px) {
     .bar {
         height: 0.9375em; /* 15px */
+        min-height: 15px;
     }
 }
 
