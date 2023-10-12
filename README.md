@@ -3,7 +3,11 @@
 
 Annual and seasonal temperatures atop Mt. Washington, 2005 - 2022. [View working component](https://seankelliher.github.io/mt-washington-temperature/).
 
-## Project Screen Shot(s)
+## Project Status
+
+Next steps, I want to do more extensive accessibility and browser testing. Also, I would like to expand component to include "deviation from normal" information on temperatures.
+
+## Project Screen Shots
 
 * View with Annual Temperatures.
 ![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.png?s=600)
