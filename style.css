@@ -46,25 +46,25 @@ button {
 }
 
 /* Media queries for button */
-@media (width >= 300px) and (width <= 399px) {
+@media (min-width: 300px) and (max-width: 399px) {
     button {
         font-size: 0.75em; /* 12px */
     }
 }
 
-@media (width >= 400px) and (width <= 499px) {
+@media (min-width: 400px) and (max-width: 499px) {
     button {
         font-size: 0.8125em; /* 13px */
     }
 }
 
-@media (width >= 500px) and (width <= 599px) {
+@media (min-width: 500px) and (max-width: 599px) {
     button {
         font-size: 0.875em; /* 14px */
     }
 }
 
-@media (width >= 600px) {
+@media (max-width: 600px) {
     button {
         font-size: 0.9375em; /* 15px */
     }
@@ -127,28 +127,28 @@ figure {
 }
 
 /* Media queries for .bar */
-@media (width >= 300px) and (width <= 399px) {
+@media (min-width: 300px) and (max-width: 399px) {
     .bar {
         height: 0.75em; /* 12px */
         min-height: 12px; /* fixes bug in Safari where bar collapses */
     }
 }
 
-@media (width >= 400px) and (width <= 499px) {
+@media (min-width: 400px) and (max-width: 499px) {
     .bar {
         height: 0.8125em; /* 13px */
         min-height: 13px;
     }
 }
 
-@media (width >= 500px) and (width <= 599px) {
+@media (min-width: 500px) and (max-width: 599px) {
     .bar {
         height: 0.875em; /* 14px */
         min-height: 14px;
     }
 }
 
-@media (width >= 600px) {
+@media (max-width: 600px) {
     .bar {
         height: 0.9375em; /* 15px */
         min-height: 15px;
@@ -204,7 +204,7 @@ h2 {
 }
 
 /* Media queries for fonts */
-@media (width >= 300px) and (width <= 399px) {
+@media (min-width: 300px) and (max-width: 399px) {
     span {
         font-size: 0.75em; /* 12px */
     }
@@ -222,7 +222,7 @@ h2 {
     }
 }
 
-@media (width >= 400px) and (width <= 499px) {
+@media (min-width: 400px) and (max-width: 499px) {
     span {
         font-size: 0.8125em; /* 13px */
     }
@@ -240,7 +240,7 @@ h2 {
     }
 }
 
-@media (width >= 500px) and (width <= 599px) {
+@media (min-width: 500px) and (max-width: 599px) {
     span {
         font-size: 0.875em; /* 14px */
     }
@@ -258,7 +258,7 @@ h2 {
     }
 }
 
-@media (width >= 600px) {
+@media (max-width: 600px) {
     span {
         font-size: 0.9375em; /* 15px */
     }
