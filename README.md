@@ -1,7 +1,7 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/mt-washington-temperature?style=flat-square)](/LICENSE.md)
 ## Mt. Washington Temperature
 
-Chart that displays average monthly temperatures at the Mt. Washington Observatory, located on the summit of Mt. Washington, 2005 - 2022. Built with Vue.js and Chart.js.
+Chart that displays average monthly temperatures at the Mt. Washington Observatory, located on the summit of Mt. Washington, 2005 - 2023. Built with Vue.js and Chart.js.
 
 ## Project Status
 
@@ -36,7 +36,7 @@ While building this chart I experimented with how to make the data easy to consu
 
 ## Acknowledgments
 
-* Temperature data from the [Mt. Washington Observatory](https://www.mountwashington.org/experience-the-weather/mount-washington-weather-archives/monthly-f6.aspx).
+* Temperature data from the [Mt. Washington Observatory](https://mountwashington.org/weather/mount-washington-weather-archives/monthly-f6/).
 * Chart built with [Chart.js](https://www.chartjs.org/docs/latest/).
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * Linting guidance from [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io).

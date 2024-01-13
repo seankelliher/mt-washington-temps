@@ -899,6 +899,56 @@ const monthlyTemps = {
             avgMonthly: 14.2,
             departFromNorm: 2.4
         }
+    },
+    y2023: {
+        jan: {
+            avgMonthly: 16.1,
+            departFromNorm: 10.3
+        },
+        feb: {
+            avgMonthly: 9.3,
+            departFromNorm: 3.4
+        },
+        mar: {
+            avgMonthly: 14.0,
+            departFromNorm: 1.1
+        },
+        apr: {
+            avgMonthly: 28.0,
+            departFromNorm: 4.3
+        },
+        may: {
+            avgMonthly: 34.3,
+            departFromNorm: -2.0
+        },
+        jun: {
+            avgMonthly: 44.7,
+            departFromNorm: -0.8
+        },
+        jul: {
+            avgMonthly: 52.7,
+            departFromNorm: 2.8
+        },
+        aug: {
+            avgMonthly: 46.1,
+            departFromNorm: -2.6
+        },
+        sep: {
+            avgMonthly: 47.4,
+            departFromNorm: 4.3
+        },
+        oct: {
+            avgMonthly: 35.2,
+            departFromNorm: 3.9
+        },
+        nov: {
+            avgMonthly: 16.8,
+            departFromNorm: -4.0
+        },
+        dec: {
+            avgMonthly: 20.7,
+            departFromNorm: 8.9
+        }
     }
 };
 
