@@ -1,23 +1,31 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/mt-washington-temperature?style=flat-square)](/LICENSE.md)
 ## Mt. Washington Temperature
 
-Annual and seasonal temperatures atop Mt. Washington, 2005 - 2022. [View working component](https://seankelliher.github.io/mt-washington-temperature/).
+Chart that displays average monthly temperatures at the Mt. Washington Observatory, located on the summit of Mt. Washington, 2005 - 2022. Built with Vue.js and Chart.js.
 
 ## Project Status
 
-Next steps, I want to do more extensive accessibility and browser testing. Also, I would like to expand component to include "deviation from normal" information on temperatures.
+UNDER RENOVATION
 
 ## Project Screen Shots
 
-* View with Annual Temperatures.
-![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.png?s=600)
-
-* View with Summer Temperatures.
-![screen shot of project](/screenshots/mt-washington-temperature-screenshot2.png?s=600)
+Screen shots to come.
 
 ## Installation and Setup Instructions
 
-This is a static component. Simply open the `index.html` file in your browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+
+Installation:
+
+`npm install`  
+
+To Run Vue:
+
+`npm run dev`    
+
+To Visit App:
+
+Visit the localhost port displayed in the terminal after running `npm run dev`.
 
 ## Reflection
 
@@ -34,5 +42,5 @@ One of the challenges, was building bar charts that maintained a consistent scal
 * Temperature data from the [Mt. Washington Observatory](https://www.mountwashington.org/experience-the-weather/mount-washington-weather-archives/monthly-f6.aspx).
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * Linting guidance from [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io).
-* Design guidance from Google's [Material Design](https://material.io/design) and [Adobe Color](https://color.adobe.com/create/color-wheel).
+* Design guidance from Google's [Material Design](https://material.io/design).
 * Shields from [Shields](https://shields.io).
