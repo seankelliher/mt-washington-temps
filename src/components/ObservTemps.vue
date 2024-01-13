@@ -193,9 +193,6 @@ onMounted(()=> {
 
 <template>
     <div class="chart">
-        <div class="chart-desc">
-            <h2>Monthly temperatures, &deg;F</h2>
-        </div>
         <canvas id="monthly-temps-chart"></canvas>
     </div>
 </template>
