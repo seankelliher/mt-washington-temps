@@ -68,20 +68,13 @@ function createMonthsChart() {
             labels: yearsList,
             datasets: [
                 {
-                    label: "Dec",
-                    data: decs.value,
-                    backgroundColor: "#64b5f6", // blue 300.
-                    borderColor: "#64b5f6",
-                    borderWidth: 1,
-                    tension: 0.3
-                },
-                {
                     label: "Jan",
                     data: jans.value,
                     backgroundColor: "#1e88e5", // blue 600.
                     borderColor: "#1e88e5",
                     borderWidth: 1,
-                    tension: 0.3
+                    tension: 0.3,
+                    hidden: false
                 },
                 {
                     label: "Feb",
@@ -89,7 +82,8 @@ function createMonthsChart() {
                     backgroundColor: "#0d47a1", // blue 900.
                     borderColor: "#0d47a1",
                     borderWidth: 1,
-                    tension: 0.3
+                    tension: 0.3,
+                    hidden: false
                 },
                 {
                     label: "Mar",
@@ -98,7 +92,7 @@ function createMonthsChart() {
                     borderColor: "#81c784",
                     borderWidth: 1,
                     tension: 0.3,
-                    hidden: true
+                    hidden: false
                 },
                 {
                     label: "Apr",
@@ -107,7 +101,7 @@ function createMonthsChart() {
                     borderColor: "#43a047",
                     borderWidth: 1,
                     tension: 0.3,
-                    hidden: true
+                    hidden: false
 
                 },
                 {
@@ -117,7 +111,7 @@ function createMonthsChart() {
                     borderColor: "#1b5e20",
                     borderWidth: 1,
                     tension: 0.3,
-                    hidden: true
+                    hidden: false
                 },
                 {
                     label: "Jun",
@@ -126,7 +120,7 @@ function createMonthsChart() {
                     borderColor: "#ff8a65",
                     borderWidth: 1,
                     tension: 0.3,
-                    hidden: true
+                    hidden: false
                 },
                 {
                     label: "Jul",
@@ -172,6 +166,15 @@ function createMonthsChart() {
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: true
+                },
+                {
+                    label: "Dec",
+                    data: decs.value,
+                    backgroundColor: "#64b5f6", // blue 300.
+                    borderColor: "#64b5f6",
+                    borderWidth: 1,
+                    tension: 0.3,
+                    hidden: true
                 }
             ]
         },
@@ -196,6 +199,9 @@ onMounted(()=> {
     <div class="chart">
         <canvas id="monthly-temps-chart"></canvas>
     </div>
+    <section>
+        <p><strong>Average monthly temperatures (&deg;F)</strong> at the Mt. Washington Observatory, located on the summit of Mt. Washington, 6,288 feet (1,916.6 meters) above sea level in North Conway, New Hampshire.</p>
+    </section>
 </template>
 
 <style scoped>
