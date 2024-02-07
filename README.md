@@ -32,7 +32,7 @@ Visit the localhost port displayed in the terminal after running `npm run dev`.
 
 Mt. Washington is the highest peak in the Northeastern United States. It is 6,288 ft (1,916.6 m) above sea level and has an active weather station, the Mt. Washington Observatory, on its summit. The Observatory does not have an API to draw data from. Instead, I downloaded the available data in a spreadsheet and put it in an object. I store the object locally and loop through it to pull the data needed for the chart.
 
-While building this chart I experimented with how to make the data easy to consume. Displaying multiple charts with a few months each seemed repetitive. Displaying one chart with 12 lines seemed confusing. I chose to display one chart, but with the ability to toggle each month on/off. December, January, and February are displayed by default.
+While building this chart I experimented with how to make the data easy to consume. Displaying multiple charts with a few months each seemed repetitive. Displaying one chart with 12 lines seemed confusing. I chose to display one chart, but with the ability to toggle each month on/off. The first six months (Jan, Feb, Mar, Apr, May, Jun) are displayed by default.
 
 ## Acknowledgments
 
