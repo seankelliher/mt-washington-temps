@@ -6,7 +6,7 @@ import ObservTemps from "./components/ObservTemps.vue";
 <template>
     <div id="container">
         <HeaderIntro />
-        <ObservTemps msg="Vite + Vue" />
+        <ObservTemps />
     </div>
 </template>
 
