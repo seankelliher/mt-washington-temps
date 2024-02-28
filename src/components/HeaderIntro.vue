@@ -3,7 +3,7 @@
 
 <template>
     <header>
-        <h1>Mt. Washington Summit Temperatures</h1>
+        <h1>Temperatures - Mt. Washington</h1>
     </header>
 </template>
 
