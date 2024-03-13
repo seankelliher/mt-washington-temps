@@ -1,12 +1,14 @@
 <script setup>
-import HeaderIntro from "./components/HeaderIntro.vue";
-import ObservTemps from "./components/ObservTemps.vue";
+import PanoImage from "./components/PanoImage.vue";
+import ChartIntro from "./components/ChartIntro.vue";
+import TempsChart from "./components/TempsChart.vue";
 </script>
 
 <template>
     <div id="container">
-        <HeaderIntro />
-        <ObservTemps />
+        <PanoImage />
+        <ChartIntro />
+        <TempsChart />
     </div>
 </template>
 
