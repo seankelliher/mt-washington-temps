@@ -9,7 +9,7 @@ Project meets general accessibility (WACG) and cross-browser requirements. More 
 
 ## Project Screen Shot
 
-* Top of page - photo and intro text.
+* Top of page - photo and caption.
 ![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.png?s=600)
 
 * Bottom of page - chart.
