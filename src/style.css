@@ -33,7 +33,6 @@ img {
     justify-content: flex-start; /* main axis */
     align-items: flex-start; /* cross axis */
     position: relative;
-    background: yellow;
 }
 
 .pano-headline {
@@ -94,7 +93,7 @@ img {
 figure {
     width: 100vw;
     height: 100vh;
-    background-image: url("mount-washington-summit-andrew-weitzel.jpg");
+    background-image: url("/mount-washington-summit-andrew-weitzel.jpg");
     background-size: cover;
     position: absolute;
     left: 50%;
