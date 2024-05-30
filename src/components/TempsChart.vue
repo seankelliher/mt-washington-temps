@@ -198,7 +198,7 @@ onMounted(()=> {
 <template>
     <div class="chart">
         <div class="chart-title">
-            <h2>Mount Washington Summit Temperatures</h2>
+            <h2>Mt. Washington Summit Temperatures</h2>
         </div>
         <canvas id="monthly-temps-chart"></canvas>
         <div class="chart-caption">Average monthly summit temperatures, in Fahrenheit (&deg;F).</div>
