@@ -1,7 +1,7 @@
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
 body {
-    background: #f6fafe;
     margin-top: 0;
+    background: #f6fafe;
 }
 
 img {
@@ -23,66 +23,94 @@ img {
 }
 
 .pano {
-    width: 90%;
-    margin: 0;
-    padding: 0 5%;
+    width: 100%;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /* main axis */
     align-items: flex-start; /* cross axis */
     position: relative;
+    background: yellow;
+}
+
+.pano-headline {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    flex: initial;
+    transform: translate(-5%, -25%);
+    z-index: 1;
 }
 
 .pano-text {
+    margin: 0;
+    padding: 0 2.5%;
     position: absolute;
-    top: 10%;
-    right: 10%;
+    right: 5%;
+    bottom: 5%;
     flex: initial;
-    transform: translate(-10%, -10%);
+    transform: translate(-5%, -5%);
+    z-index: 1;
+    background: rgba(255 255 255 / 90%);
 }
 
-@media (min-width: 300px) and (max-width: 899px) {
+@media (min-width: 300px) and (max-width: 699px) {
+    .pano-headline, .pano-text {
+        width: 75%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 799px) {
+    .pano-headline {
+        width: 55%;
+    }
+
     .pano-text {
+        width: 75%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 999px) {
+    .pano-headline {
+        width: 45%;
+    }
+
+    .pano-text {
+        width: 65%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .pano-headline, .pano-text {
         width: 50%;
     }
 }
 
-@media (min-width: 900px) and (max-width: 1099px) {
-    .pano-text {
-        width: 40%;
-    }
-}
-
-@media (min-width: 1100px) and (max-width: 1199px) {
-    .pano-text {
-        width: 35%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .pano-text {
-        width: 30%;
-    }
-}
-
 figure {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    flex: initial;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("mount-washington-summit-andrew-weitzel.jpg");
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin: 0 -50vw;
 }
 
 .chart {
     width: 90%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0 5%;
+    margin: 2em 0 3em; /* Longhand 2em 0 3em 0 */
+    padding: 2em 5%;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
-    place-content: center flex-start; /* shorthand, cross/main axis combined */
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 .chart-title {
@@ -105,29 +133,11 @@ canvas {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.8;
     font-weight: 400;
-    color: #41484d;
+    color: #171c1f;
     flex: initial;
 }
 
 /* Font styles and their media queries */
-figcaption {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.8;
-    font-weight: 400;
-    color: #41484d;
-    max-width: 700px;
-    padding: 0.5em 0;
-}
-
-figcaption a {
-    color: #41484d;
-    text-decoration: none;
-}
-
-figcaption a:hover {
-    text-decoration: underline;
-}
-
 h1 {
     font-family: Georgia, serif;
     line-height: 1.8;
@@ -144,9 +154,25 @@ h2 {
     color: #171c1f;
 }
 
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #171c1f;
+}
+
+p a {
+    color: #171c1f;
+    text-decoration: underline;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
 /* Media queries for fonts */
 @media (min-width: 300px) and (max-width: 399px) {
-    .chart-caption, figcaption {
+    .chart-caption, p {
         font-size: 0.8125em; /* 13px */
     }
 
@@ -160,7 +186,7 @@ h2 {
 }
 
 @media (min-width: 400px) and (max-width: 499px) {
-    .chart-caption, figcaption {
+    .chart-caption, p {
         font-size: 0.875em; /* 14px */
     }
 
@@ -174,7 +200,7 @@ h2 {
 }
 
 @media (min-width: 500px) and (max-width: 599px) {
-    .chart-caption, figcaption {
+    .chart-caption, p {
         font-size: 0.9375em; /* 15px */
     }
 
@@ -188,7 +214,7 @@ h2 {
 }
 
 @media (min-width: 600px) {
-    .chart-caption, figcaption {
+    .chart-caption, p {
         font-size: 1em; /* 16px */
     }
 
