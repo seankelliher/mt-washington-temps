@@ -196,6 +196,8 @@ onMounted(()=> {
 </script>
 
 <template>
+    <div class="pano-caption">The Mt. Washington Observatory on the mountain's summit is the highest point in the Northeast U.S. at 6,288 feet (1,916.6 meters) above sea level in North Conway, New Hampshire. Photo: <a href="https://commons.wikimedia.org/wiki/File:View_from_the_top_of_Mt._Washington_(49675348518).jpg" target="_blank">Andrew Weitzel</a>, March 16, 2020.</div>
+
     <div class="chart">
         <div class="chart-title">
             <h2>Mt. Washington Summit Temperatures</h2>
