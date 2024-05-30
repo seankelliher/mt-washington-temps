@@ -9,10 +9,10 @@ Project meets general accessibility (WACG) and cross-browser requirements. More 
 
 ## Project Screen Shot
 
-* Top of page - photo and caption.
+* Intro page.
 ![screen shot of project](/screenshots/mt-washington-temperature-screenshot1.png?s=600)
 
-* Bottom of page - chart.
+* Chart.
 ![screen shot of project](/screenshots/mt-washington-temperature-screenshot2.png?s=600)
 
 ## Installation and Setup Instructions
@@ -33,7 +33,7 @@ Visit the localhost port displayed in the terminal after running `npm run dev`.
 
 ## Reflection
 
-Mt. Washington is the highest peak in the Northeastern United States. It is 6,288 ft (1,916.6 m) above sea level and has an active weather station, the Mt. Washington Observatory, on its summit. The Observatory does not have an API to draw data from. Instead, I downloaded the available data in a spreadsheet and store it locally.
+The Mt. Washington Observatory does not have an API to draw data from. Instead, I downloaded the available data in a spreadsheet and store it locally.
 
 While building this chart I experimented with how to make the data easy to consume. Displaying multiple charts with a few months each seemed repetitive. Displaying one chart with 12 lines seemed confusing. I chose to display one chart, but with the ability to toggle each month on/off. The first six months (Jan, Feb, Mar, Apr, May, Jun) are displayed by default.
 
