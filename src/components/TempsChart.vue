@@ -179,9 +179,26 @@ function createMonthsChart() {
             ]
         },
         options: {
-            scales: {
-                y: {
-                    beginAtZero: true
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.dataset.label || "";
+
+                            if (label) {
+                                label += ": ";
+                            }
+                            if (context.parsed.y !== null) {
+                                label += context.parsed.y + "\u00B0 F";
+                            }
+                            return label;
+                        }
+                    }
+                }
+            },
+            elements: {
+                point: {
+                    radius: 5
                 }
             }
         }
@@ -191,8 +208,6 @@ function createMonthsChart() {
 onMounted(()=> {
     createMonthsChart();
 });
-
-
 </script>
 
 <template>
@@ -203,7 +218,7 @@ onMounted(()=> {
             <h2>Mt. Washington Summit Temperatures</h2>
         </div>
         <canvas id="monthly-temps-chart"></canvas>
-        <div class="chart-caption">Average monthly summit temperatures, in Fahrenheit (&deg;F).</div>
+        <div class="chart-caption">Average monthly summit temperatures in Fahrenheit (&deg;F).</div>
     </div>
 </template>
 
