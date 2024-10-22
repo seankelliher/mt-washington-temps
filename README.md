@@ -1,7 +1,7 @@
-[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/mt-washington-temp?style=flat-square)](/LICENSE.md)
+[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/mt-washington-temps?style=flat-square)](/LICENSE.md)
 ## Mt. Washington Temperature
 
-Chart of average monthly temperatures at the Mt. Washington Observatory. Built with Vue.js and Chart.js. [View working component](https://sean-kelliher-mt-washington-temp.netlify.app).
+Chart of average monthly temperatures at the Mt. Washington Observatory. Built with Vue.js and Chart.js. [View working component](https://sean-kelliher-mt-washington-temps.netlify.app).
 
 ## Project Status
 
@@ -10,10 +10,10 @@ Project meets general accessibility (WACG) and cross-browser requirements. More 
 ## Project Screen Shot
 
 * Intro page.
-![screen shot of project](/screenshots/mt-washington-temp-screenshot1.png?s=600)
+![screen shot of project](/screenshots/mt-washington-temps-screenshot1.png?s=600)
 
 * Chart.
-![screen shot of project](/screenshots/mt-washington-temp-screenshot2.png?s=600)
+![screen shot of project](/screenshots/mt-washington-temps-screenshot2.png?s=600)
 
 ## Installation and Setup Instructions
 
