@@ -1,5 +1,5 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/mt-washington-temps?style=flat-square)](/LICENSE.md)
-## Mt. Washington Temperature
+## Mt. Washington Temperatures
 
 Chart of average monthly temperatures at the Mt. Washington Observatory. Built with Vue.js and Chart.js. [View working component](https://sean-kelliher-mt-washington-temps.netlify.app).
 
