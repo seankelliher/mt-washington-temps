@@ -211,14 +211,15 @@ onMounted(()=> {
 </script>
 
 <template>
-    <div class="pano-caption">The Mt. Washington Observatory on the mountain's summit is the highest point in the Northeast U.S. at 6,288 feet (1,916.6 meters) above sea level in North Conway, New Hampshire. Photo: <a href="https://commons.wikimedia.org/wiki/File:View_from_the_top_of_Mt._Washington_(49675348518).jpg" target="_blank">Andrew Weitzel</a>, March 16, 2020.</div>
+    <div class="pano-caption roboto-serif four">Petty Officer 3rd Class Jonathan Szylobry, a US Marine, on the summit of Mt. Washington in North Conway, New Hampshire. At 6,288 feet (1,916.6 meters) above sea level, it is the highest point in the Northeast United States. Photo: <a href="https://commons.wikimedia.org/wiki/File:USMC-080103-M-0000M-01.jpg" target="_blank">Department of Defense</a>.</div>
 
     <div class="chart">
         <div class="chart-title">
-            <h2>Mt. Washington Summit Temperatures</h2>
+            <h2 class="bevan-regular">Mt. Washington</h2>
+            <h3 class="roboto-serif six">Average monthly summit temperatures</h3>
         </div>
         <canvas id="monthly-temps-chart"></canvas>
-        <div class="chart-caption">Average monthly summit temperatures in Fahrenheit (&deg;F).</div>
+        <div class="chart-caption roboto-serif four">Data from the Mt. Washington Observatory, a weather station located on the mountain's summit. The Observatory monitors weather year round.</div>
     </div>
 </template>
 

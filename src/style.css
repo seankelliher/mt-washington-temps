@@ -35,10 +35,10 @@ img {
     position: relative;
 }
 
-figure {
+.pano-img {
     width: 100vw;
     height: 100vh;
-    background-image: url("/mount-washington-summit-andrew-weitzel.jpg");
+    background-image: url("/mount-washington-summit-dept-defense.jpg");
     background-size: cover;
     position: absolute;
     left: 50%;
@@ -47,46 +47,20 @@ figure {
 }
 
 .pano-headline {
-    margin: 0;
-    padding: 0;
+    width: 90%;
+    padding: 0 5%;
     position: absolute;
-    right: 5%;
-    top: 25%;
+    top: 5vh;
     flex: initial;
-    transform: translate(-5%, -25%);
+    text-align: center;
     z-index: 1;
-}
-
-@media (min-width: 300px) and (max-width: 699px) {
-    .pano-headline {
-        width: 75%;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 799px) {
-    .pano-headline {
-        width: 55%;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 999px) {
-    .pano-headline {
-        width: 45%;
-    }
-}
-
-@media (min-width: 1000px) {
-    .pano-headline {
-        width: 50%;
-    }
 }
 
 .pano-caption {
     width: 90%;
     padding: 0.5em 5%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em; /* 16px */
     line-height: 1.5;
-    font-weight: 400;
     color: #41484d;
     flex: initial;
 }
@@ -102,7 +76,7 @@ figure {
 
 .chart {
     width: 90%;
-    margin: 2em 0;
+    margin: 0;
     padding: 2em 5%;
     flex: initial;
     display: flex;
@@ -128,63 +102,46 @@ canvas {
 .chart-caption {
     width: 100%;
     padding: 0.5em 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.8;
-    font-weight: 400;
-    color: #41484d;
+    font-size: 1em; /* 16px */
+    line-height: 1.5;
+    color: #2b3133; /* N-20 */
     flex: initial;
 }
 
 /* Font styles and their media queries */
 h1 {
-    font-family: Georgia, serif;
-    line-height: 1.8;
-    font-weight: 600;
-    font-style: italic;
-    color: #fff;
+    line-height: 1.4;
+    color: #000;
 }
 
 h2 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
-    font-weight: 600;
-    color: #171c1f;
+    color: #171d1e; /* N-10 */
+    margin-bottom: 0.25em;
+}
+
+h3 {
+    line-height: 1.5;
+    color: #171d1e; /* N-10 */
+    margin-top: 0;
 }
 
 /* Media queries for fonts */
 @media (min-width: 300px) and (max-width: 399px) {
-    .pano-caption, .chart-caption {
-        font-size: 0.8125em; /* 13px */
-    }
-
     h1 {
-        font-size: 1.125em; /* 18 px */
+        font-size: 1.3125em; /* 21px */
     }
 
     h2 {
+        font-size: 1.1875em; /* 19px */
+    }
+
+    h3 {
         font-size: 1em; /* 16px */
     }
 }
 
 @media (min-width: 400px) and (max-width: 499px) {
-    .pano-caption, .chart-caption {
-        font-size: 0.875em; /* 14px */
-    }
-
-    h1 {
-        font-size: 1.25em; /* 20px */
-    }
-
-    h2 {
-        font-size: 1.125em; /* 18 px */
-    }
-}
-
-@media (min-width: 500px) and (max-width: 599px) {
-    .pano-caption, .chart-caption {
-        font-size: 0.9375em; /* 15px */
-    }
-
     h1 {
         font-size: 1.375em; /* 22px */
     }
@@ -192,13 +149,27 @@ h2 {
     h2 {
         font-size: 1.25em; /* 20px */
     }
+
+    h3 {
+        font-size: 1.0625em; /* 17px */
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    h1 {
+        font-size: 1.4375em; /* 23px */
+    }
+
+    h2 {
+        font-size: 1.3125em; /* 21px */
+    }
+
+    h3 {
+        font-size: 1.125em; /* 18 px */
+    }
 }
 
 @media (min-width: 600px) {
-    .pano-caption, .chart-caption {
-        font-size: 1em; /* 16px */
-    }
-
     h1 {
         font-size: 1.5em; /* 24px */
     }
@@ -206,4 +177,41 @@ h2 {
     h2 {
         font-size: 1.375em; /* 22px */
     }
+
+    h3 {
+        font-size: 1.1875em; /* 19px */
+    }
+}
+
+/* GOOGLE Fonts: Font-family bevan-regular */
+.bevan-regular {
+  font-family: Bevan, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Currently not used */
+.bevan-regular-italic {
+  font-family: Bevan, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* GOOGLE Fonts: Font-family roboto-serif, variable weight font, 100 to 900 */
+.roboto-serif {
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+}
+
+/* Font-weight */
+.four {
+    font-weight:  400;
+}
+
+.six {
+    font-weight:  600;
 }
