@@ -24,7 +24,6 @@ img {
 
 .pano {
     width: 100%;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     flex: initial;
@@ -35,31 +34,132 @@ img {
     position: relative;
 }
 
-.pano-img {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("/mount-washington-summit-dept-defense.jpg");
-    background-size: cover;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    margin: 0 -50vw;
-}
-
 .pano-headline {
-    width: 90%;
-    padding: 0 5%;
+    padding: 0;
     position: absolute;
-    top: 5vh;
     flex: initial;
     text-align: center;
     z-index: 1;
 }
 
+/*.pano-img {
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin: 0 -50vw;
+}*/
+
+/*.img-src {
+    object-fit: cover;
+}*/
+
+@media (min-width: 300px) and (max-width: 499px) {
+    .pano {
+        min-height: 45vh;
+    }
+
+    .pano-headline {
+        width: 80%;
+        margin: 0 10%;
+        bottom: 2vh;
+    }
+
+    .pano-img {
+        width: 100vw;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        margin: 0 -50vw;
+        height: 45vh;
+    }
+
+    .img-src {
+        height: 45vh;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+    .pano {
+        min-height: 55vh;
+    }
+
+    .pano-headline {
+        width: 60%;
+        margin: 0 20%;
+        bottom: 3vh;
+    }
+
+    .pano-img {
+        width: 100vw;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        margin: 0 -50vw;
+        height: 55vh;
+    }
+
+    .img-src {
+        height: 55vh;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1499px) {
+    .pano {
+        min-height: 100vh;
+    }
+
+    .pano-headline {
+        width: 50%;
+        margin: 0 25%;
+        top: 3vh;
+    }
+
+    .pano-img {
+        width: 100vw;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        margin: 0 -50vw;
+        height: 100vh;
+    }
+
+    .img-src {
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1500px) {
+    .pano-headline {
+        width: 50%;
+        margin: 0 25%;
+        top: 3vh;
+    }
+
+    .pano-img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        flex: initial;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start; /* main axis */
+        align-items: flex-start; /* cross axis */
+    }
+
+    .img-src {
+        /* height: 100vh; */
+    }
+
+}
+
 .pano-caption {
     width: 90%;
     padding: 0.5em 5%;
-    font-size: 1em; /* 16px */
     line-height: 1.5;
     color: #41484d;
     flex: initial;
@@ -102,7 +202,6 @@ canvas {
 .chart-caption {
     width: 100%;
     padding: 0.5em 0;
-    font-size: 1em; /* 16px */
     line-height: 1.5;
     color: #2b3133; /* N-20 */
     flex: initial;
@@ -110,14 +209,14 @@ canvas {
 
 /* Font styles and their media queries */
 h1 {
-    line-height: 1.4;
+    line-height: 1.5;
     color: #000;
 }
 
 h2 {
     line-height: 1.5;
     color: #171d1e; /* N-10 */
-    margin-bottom: 0.25em;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -128,8 +227,12 @@ h3 {
 
 /* Media queries for fonts */
 @media (min-width: 300px) and (max-width: 399px) {
+    .pano-caption, .chart-caption {
+        font-size: 0.9375em; /* 15px */
+    }
+
     h1 {
-        font-size: 1.3125em; /* 21px */
+        font-size: 1.25em; /* 20px */
     }
 
     h2 {
@@ -142,8 +245,12 @@ h3 {
 }
 
 @media (min-width: 400px) and (max-width: 499px) {
+    .pano-caption, .chart-caption {
+        font-size: 0.9375em; /* 15px */
+    }
+
     h1 {
-        font-size: 1.375em; /* 22px */
+        font-size: 1.3125em; /* 21px */
     }
 
     h2 {
@@ -156,8 +263,12 @@ h3 {
 }
 
 @media (min-width: 500px) and (max-width: 599px) {
+    .pano-caption, .chart-caption {
+        font-size: 0.9375em; /* 15px */
+    }
+
     h1 {
-        font-size: 1.4375em; /* 23px */
+        font-size: 1.375em; /* 22px */
     }
 
     h2 {
@@ -170,8 +281,12 @@ h3 {
 }
 
 @media (min-width: 600px) {
+    .pano-caption, .chart-caption {
+        font-size: 1em; /* 16px */
+    }
+
     h1 {
-        font-size: 1.5em; /* 24px */
+        font-size: 1.4375em; /* 23px */
     }
 
     h2 {
@@ -210,6 +325,10 @@ h3 {
 /* Font-weight */
 .four {
     font-weight:  400;
+}
+
+.five {
+    font-weight:  500;
 }
 
 .six {
