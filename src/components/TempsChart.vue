@@ -216,7 +216,7 @@ onMounted(()=> {
     <div class="chart">
         <div class="chart-title">
             <h2 class="bevan-regular">Mt. Washington</h2>
-            <h3 class="roboto-serif six">Average monthly summit temperatures</h3>
+            <h3 class="roboto-serif five">Average monthly summit temperatures</h3>
         </div>
         <canvas id="monthly-temps-chart"></canvas>
         <div class="chart-caption roboto-serif four">Data from the Mt. Washington Observatory, a weather station located on the mountain's summit. The Observatory monitors weather year round.</div>
