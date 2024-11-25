@@ -8,7 +8,11 @@
         </div>
 
         <figure class="pano-img">
-            <!-- image added as background img -->
+            <img
+                src="/mount-washington-summit-dept-defense.jpg"
+                alt="ADD ALT TEXT"
+                class="img-src"
+            >
             <figcaption hidden>Summit of Mount Washington covered in snow and ice.</figcaption>
         </figure>
     </div>
