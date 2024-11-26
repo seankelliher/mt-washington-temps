@@ -53,7 +53,7 @@ figure.full-width {
     margin: 0 5%;
     padding: 0;
     position: absolute;
-    top: 0;
+    top: 1em;
     text-align: center;
     z-index: 1;
 }
@@ -61,7 +61,8 @@ figure.full-width {
 .pano-caption {
     width: 90%;
     max-width: 800px;
-    padding: 0.5em 5%;
+    margin: 0.5em 0 0; /* longhand 0.5em 0 0 0 */
+    padding: 0 5%;
     line-height: 1.5;
     color: #41484d;
     flex: initial;
@@ -76,26 +77,62 @@ figure.full-width {
     text-decoration: underline;
 }
 
+section {
+    width: 90%;
+    max-width: 1280px;
+    margin: 2em 0 0; /* longhand 2em 0 0 0 */
+    padding: 0 5%;
+    flex: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /* main axis */
+    align-items: flex-start; /* cross axis */
+}
+
+.callout {
+    /* width: 15%;
+    margin: 0;
+    padding: 0 2.5%; */
+    background: #ffdf96; /* T-90 */
+    border-radius: 6px;
+    text-align: center;
+    flex: initial;
+}
+
+@media (min-width: 300px) and (max-width: 559px) {
+    .callout {
+        width: 35%;
+        margin: 0.5em 0;
+        padding: 0 5%;
+    }
+}
+
+@media (min-width: 560px) {
+    .callout {
+        width: 15%;
+        margin: 0;
+        padding: 0 2.5%;
+    }
+
+}
+
+.heading {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: initial;
+}
+
 /* Chart elements */
 .chart {
     width: 90%;
     margin: 2em 0;
-    padding: 2em 5%;
-    background: #f0f4f8; /* N-96 */
+    padding: 0 5%;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /* main axis */
     align-items: flex-start; /* cross axis */
-    position: relative;
-}
-
-.chart::before {
-    content: "";
-    position: absolute;
-    inset: 0 calc((100vw - 100%) / -2);
-    background: #f0f4f8; /* N-96 */
-    z-index: -1;
 }
 
 .chart-title {
@@ -115,13 +152,20 @@ canvas {
 .chart-caption {
     width: 100%;
     max-width: 800px;
-    padding: 0.5em 0;
+    margin: 0.5em 0 0; /* longhand 0.5em 0 0 0 */
+    padding: 0 5%;
     line-height: 1.5;
     color: #2b3133; /* N-20 */
     flex: initial;
 }
 
 /* Fonts - line heights, colors, margins */
+p {
+    line-height: 1.5;
+    color: #171c1f; /* N-10 */
+    margin-top: 0;
+}
+
 h1 {
     line-height: 1.5;
     color: #000;
@@ -135,7 +179,13 @@ h2 {
 
 h3 {
     line-height: 1.5;
-    color: #171d1e; /* N-10 */
+    color: #251a00; /* T-10 */
+    margin-bottom: 0;
+}
+
+h4 {
+    line-height: 1.5;
+    color: #251a00; /* T-10 */
     margin-top: 0;
 }
 
@@ -156,6 +206,10 @@ h3 {
     h3 {
         font-size: 1em; /* 16px */
     }
+
+    h4 {
+        font-size: 0.9375em; /* 15px */
+    }
 }
 
 @media (min-width: 400px) and (max-width: 499px) {
@@ -173,6 +227,10 @@ h3 {
 
     h3 {
         font-size: 1.0625em; /* 17px */
+    }
+
+    h4 {
+        font-size: 1em; /* 16px */
     }
 }
 
@@ -192,11 +250,19 @@ h3 {
     h3 {
         font-size: 1.125em; /* 18 px */
     }
+
+    h4 {
+        font-size: 1.0625em; /* 17px */
+    }
 }
 
 @media (min-width: 600px) {
     .pano-caption, .chart-caption {
         font-size: 1em; /* 16px */
+    }
+
+    p {
+        font-size: 1.0625em; /* 17px */
     }
 
     h1 {
@@ -209,6 +275,10 @@ h3 {
 
     h3 {
         font-size: 1.1875em; /* 19px */
+    }
+
+    h4 {
+        font-size: 1.125em; /* 18 px */
     }
 }
 
