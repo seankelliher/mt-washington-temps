@@ -9,10 +9,10 @@ Project meets general accessibility (WACG) and cross-browser requirements. More 
 
 ## Project Screen Shot
 
-* Intro page.
+* Intro image.
 ![screen shot of project](/screenshots/mt-washington-temps-screenshot1.png?s=600)
 
-* Chart.
+* Callouts and chart.
 ![screen shot of project](/screenshots/mt-washington-temps-screenshot2.png?s=600)
 
 ## Installation and Setup Instructions
