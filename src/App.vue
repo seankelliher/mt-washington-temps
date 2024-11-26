@@ -1,6 +1,7 @@
 <script setup>
 import PanoImage from "./components/PanoImage.vue";
 import PanoCaption from "./components/PanoCaption.vue";
+import CallOuts from "./components/CallOuts.vue";
 import TempsChart from "./components/TempsChart.vue";
 </script>
 
@@ -8,6 +9,7 @@ import TempsChart from "./components/TempsChart.vue";
     <div id="container">
         <PanoImage />
         <PanoCaption />
+        <CallOuts />
         <TempsChart />
     </div>
 </template>
