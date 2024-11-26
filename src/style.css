@@ -25,120 +25,37 @@ img {
 /* Pano elements */
 .pano {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     flex: initial;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; /* main axis */
-    align-items: flex-start; /* cross axis */
     position: relative;
 }
 
+figure.full-width {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.full-width-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
 .pano-headline {
+    width: 90%;
+    margin: 0 5%;
     padding: 0;
     position: absolute;
-    flex: initial;
+    top: 0;
     text-align: center;
     z-index: 1;
-}
-
-@media (min-width: 300px) and (max-width: 499px) {
-    .pano {
-        min-height: 45vh;
-    }
-
-    .pano-headline {
-        width: 80%;
-        margin: 0 10%;
-        bottom: 2vh;
-    }
-
-    .pano-figure {
-        width: 100vw;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        margin: 0 -50vw;
-        height: 45vh;
-    }
-
-    .pano-img {
-        height: 45vh;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 799px) {
-    .pano {
-        min-height: 55vh;
-    }
-
-    .pano-headline {
-        width: 60%;
-        margin: 0 20%;
-        bottom: 3vh;
-    }
-
-    .pano-figure {
-        width: 100vw;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        margin: 0 -50vw;
-        height: 55vh;
-    }
-
-    .pano-img {
-        height: 55vh;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 1499px) {
-    .pano {
-        min-height: 100vh;
-    }
-
-    .pano-headline {
-        width: 50%;
-        margin: 0 25%;
-        top: 3vh;
-    }
-
-    .pano-figure {
-        width: 100vw;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        margin: 0 -50vw;
-        height: 100vh;
-    }
-
-    .pano-img {
-        height: 100vh;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 1500px) {
-    .pano-headline {
-        width: 50%;
-        margin: 0 25%;
-        top: 3vh;
-    }
-
-    .pano-figure {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        padding: 0;
-        flex: initial;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start; /* main axis */
-        align-items: flex-start; /* cross axis */
-    }
 }
 
 .pano-caption {
@@ -197,7 +114,7 @@ canvas {
 
 .chart-caption {
     width: 100%;
-    max-width: 800px;
+    /* max-width: 800px; */
     padding: 0.5em 0;
     line-height: 1.5;
     color: #2b3133; /* N-20 */
