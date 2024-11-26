@@ -40,7 +40,7 @@ While building this chart I experimented with how to make the data easy to consu
 ## Acknowledgments
 
 * Temperature data from the [Mt. Washington Observatory](https://mountwashington.org/weather/mount-washington-weather-archives/monthly-f6/).
-* Photo of summit [Andrew Weitzel](https://commons.wikimedia.org/wiki/File:View_from_the_top_of_Mt._Washington_(49675348518).jpg).
+* Photo of summit [Department of Defense](https://commons.wikimedia.org/wiki/File:USMC-080103-M-0000M-01.jpg).
 * Chart built with [Chart.js](https://www.chartjs.org/docs/latest/).
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * Linting guidance from [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io).
