@@ -22,6 +22,7 @@ img {
     align-items: flex-start; /* cross axis */
 }
 
+/* Pano elements */
 .pano {
     width: 100%;
     margin: 0;
@@ -42,18 +43,6 @@ img {
     z-index: 1;
 }
 
-/*.pano-img {
-    width: 100vw;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    margin: 0 -50vw;
-}*/
-
-/*.img-src {
-    object-fit: cover;
-}*/
-
 @media (min-width: 300px) and (max-width: 499px) {
     .pano {
         min-height: 45vh;
@@ -65,7 +54,7 @@ img {
         bottom: 2vh;
     }
 
-    .pano-img {
+    .pano-figure {
         width: 100vw;
         position: absolute;
         left: 50%;
@@ -74,7 +63,7 @@ img {
         height: 45vh;
     }
 
-    .img-src {
+    .pano-img {
         height: 45vh;
         object-fit: cover;
     }
@@ -91,7 +80,7 @@ img {
         bottom: 3vh;
     }
 
-    .pano-img {
+    .pano-figure {
         width: 100vw;
         position: absolute;
         left: 50%;
@@ -100,7 +89,7 @@ img {
         height: 55vh;
     }
 
-    .img-src {
+    .pano-img {
         height: 55vh;
         object-fit: cover;
     }
@@ -117,7 +106,7 @@ img {
         top: 3vh;
     }
 
-    .pano-img {
+    .pano-figure {
         width: 100vw;
         position: absolute;
         left: 50%;
@@ -126,7 +115,7 @@ img {
         height: 100vh;
     }
 
-    .img-src {
+    .pano-img {
         height: 100vh;
         object-fit: cover;
     }
@@ -139,7 +128,7 @@ img {
         top: 3vh;
     }
 
-    .pano-img {
+    .pano-figure {
         width: 100%;
         height: auto;
         margin: 0 auto;
@@ -150,15 +139,11 @@ img {
         justify-content: flex-start; /* main axis */
         align-items: flex-start; /* cross axis */
     }
-
-    .img-src {
-        /* height: 100vh; */
-    }
-
 }
 
 .pano-caption {
     width: 90%;
+    max-width: 800px;
     padding: 0.5em 5%;
     line-height: 1.5;
     color: #41484d;
@@ -174,15 +159,26 @@ img {
     text-decoration: underline;
 }
 
+/* Chart elements */
 .chart {
     width: 90%;
-    margin: 0;
+    margin: 2em 0;
     padding: 2em 5%;
+    background: #f0f4f8; /* N-96 */
     flex: initial;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /* main axis */
     align-items: flex-start; /* cross axis */
+    position: relative;
+}
+
+.chart::before {
+    content: "";
+    position: absolute;
+    inset: 0 calc((100vw - 100%) / -2);
+    background: #f0f4f8; /* N-96 */
+    z-index: -1;
 }
 
 .chart-title {
@@ -201,13 +197,14 @@ canvas {
 
 .chart-caption {
     width: 100%;
+    max-width: 800px;
     padding: 0.5em 0;
     line-height: 1.5;
     color: #2b3133; /* N-20 */
     flex: initial;
 }
 
-/* Font styles and their media queries */
+/* Fonts - line heights, colors, margins */
 h1 {
     line-height: 1.5;
     color: #000;
@@ -215,7 +212,7 @@ h1 {
 
 h2 {
     line-height: 1.5;
-    color: #171d1e; /* N-10 */
+    color: #171c1f; /* N-10 */
     margin-bottom: 0;
 }
 
@@ -225,7 +222,7 @@ h3 {
     margin-top: 0;
 }
 
-/* Media queries for fonts */
+/* Font media queries */
 @media (min-width: 300px) and (max-width: 399px) {
     .pano-caption, .chart-caption {
         font-size: 0.9375em; /* 15px */
@@ -236,7 +233,7 @@ h3 {
     }
 
     h2 {
-        font-size: 1.1875em; /* 19px */
+        font-size: 1.125em; /* 18 px */
     }
 
     h3 {
@@ -254,7 +251,7 @@ h3 {
     }
 
     h2 {
-        font-size: 1.25em; /* 20px */
+        font-size: 1.1875em; /* 19px */
     }
 
     h3 {
@@ -272,7 +269,7 @@ h3 {
     }
 
     h2 {
-        font-size: 1.3125em; /* 21px */
+        font-size: 1.25em; /* 20px */
     }
 
     h3 {
@@ -290,7 +287,7 @@ h3 {
     }
 
     h2 {
-        font-size: 1.375em; /* 22px */
+        font-size: 1.3125em; /* 21px */
     }
 
     h3 {
@@ -300,29 +297,29 @@ h3 {
 
 /* GOOGLE Fonts: Font-family bevan-regular */
 .bevan-regular {
-  font-family: Bevan, serif;
-  font-weight: 400;
-  font-style: normal;
-}
+    font-family: Bevan, serif;
+    font-weight: 400;
+    font-style: normal;
+    }
 
 /* Currently not used */
 .bevan-regular-italic {
-  font-family: Bevan, serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: Bevan, serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 /* GOOGLE Fonts: Font-family roboto-serif, variable weight font, 100 to 900 */
 .roboto-serif {
-  font-family: "Roboto Serif", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "GRAD" 0;
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
 }
 
-/* Font-weight */
+/* Font-weights */
 .four {
     font-weight:  400;
 }
