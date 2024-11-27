@@ -33,9 +33,7 @@ Visit the localhost port displayed in the terminal after running `npm run dev`.
 
 ## Reflection
 
-The Mt. Washington Observatory does not have an API to draw data from. Instead, I downloaded the available data in a spreadsheet and store it locally.
-
-While building this chart I experimented with how to make the data easy to consume. Displaying multiple charts with a few months each seemed repetitive. Displaying one chart with 12 lines seemed confusing. I chose to display one chart, but with the ability to toggle each month on/off. The first six months (Jan, Feb, Mar, Apr, May, Jun) are displayed by default.
+The Mt. Washington Observatory does not have an API to draw data from. Instead, I downloaded the available data and stored it locally. I "centralized" most functionality in a "store" file. This keeps the logic more organized and easier to understand and modify. It also makes it easier to share data among components.
 
 ## Acknowledgments
 
