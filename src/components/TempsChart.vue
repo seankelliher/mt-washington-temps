@@ -75,7 +75,7 @@ function createMonthsChart() {
                     borderColor: "#f4511e",
                     borderWidth: 1,
                     tension: 0.3,
-                    hidden: true
+                    hidden: false
                 },
                 {
                     label: "Aug",
@@ -84,7 +84,7 @@ function createMonthsChart() {
                     borderColor: "#bf360c",
                     borderWidth: 1,
                     tension: 0.3,
-                    hidden: true
+                    hidden: false
                 },
                 {
                     label: "Sep",
@@ -93,7 +93,7 @@ function createMonthsChart() {
                     borderColor: "#a1887f",
                     borderWidth: 1,
                     tension: 0.3,
-                    hidden: true
+                    hidden: false
                 },
                 {
                     label: "Oct",
@@ -102,7 +102,7 @@ function createMonthsChart() {
                     borderColor: "#6d4c41",
                     borderWidth: 1,
                     tension: 0.3,
-                    hidden: true
+                    hidden: false
                 },
                 {
                     label: "Nov",
@@ -111,7 +111,7 @@ function createMonthsChart() {
                     borderColor: "#3e2723",
                     borderWidth: 1,
                     tension: 0.3,
-                    hidden: true
+                    hidden: false
                 },
                 {
                     label: "Dec",
@@ -120,7 +120,7 @@ function createMonthsChart() {
                     borderColor: "#64b5f6",
                     borderWidth: 1,
                     tension: 0.3,
-                    hidden: true
+                    hidden: false
                 }
             ]
         },
