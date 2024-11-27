@@ -64,19 +64,21 @@ figure.full-width {
     margin: 0.5em 0 0; /* longhand 0.5em 0 0 0 */
     padding: 0 5%;
     line-height: 1.5;
-    color: #41484d;
+    color: #41484d; /* NV-30 */
     flex: initial;
 }
 
 .pano-caption a {
-    color: #41484d;
+    color: #41484d; /* NV-30 */
     text-decoration: underline;
 }
 
 .pano-caption a:hover {
+    color: #2b3136;  /* NV-20 */
     text-decoration: underline;
 }
 
+/* Callout elements */
 section {
     width: 90%;
     max-width: 1280px;
@@ -90,9 +92,6 @@ section {
 }
 
 .callout {
-    /* width: 15%;
-    margin: 0;
-    padding: 0 2.5%; */
     background: #ffdf96; /* T-90 */
     border-radius: 6px;
     text-align: center;
@@ -113,7 +112,6 @@ section {
         margin: 0;
         padding: 0 2.5%;
     }
-
 }
 
 .heading {
@@ -153,9 +151,9 @@ canvas {
     width: 100%;
     max-width: 800px;
     margin: 0.5em 0 0; /* longhand 0.5em 0 0 0 */
-    padding: 0 5%;
+    padding: 0;
     line-height: 1.5;
-    color: #2b3133; /* N-20 */
+    color: #41484d; /* NV-30 */
     flex: initial;
 }
 
