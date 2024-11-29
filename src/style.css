@@ -1,3 +1,11 @@
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1280,17,1.125,3,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+:root {
+    --fs-0: clamp(1rem, 0.9792rem + 0.1042vw, 1.0625rem); /* p, caption */
+    --fs-1: clamp(1.125rem, 1.1016rem + 0.1172vw, 1.1953rem); /* h3 */
+    --fs-2: clamp(1.2656rem, 1.2393rem + 0.1318vw, 1.3447rem); /* h2 */
+    --fs-3: clamp(1.4238rem, 1.3942rem + 0.1483vw, 1.5128rem); /* h1 */
+}
+
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
 body {
     margin-top: 0;
@@ -28,7 +36,12 @@ img {
     margin: 0 auto;
     padding: 0;
     flex: initial;
-    position: relative;
+}
+
+@media (min-width: 600px) {
+    .pano {
+        position: relative;
+    }
 }
 
 figure.full-width {
@@ -44,18 +57,28 @@ figure.full-width {
 
 .full-width-img {
     width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+}
+
+@media (min-width: 960px) {
+    .full-width-img {
+        height: 100vh;
+        object-fit: cover;
+    }
 }
 
 .pano-headline {
     width: 90%;
-    margin: 0 5%;
-    padding: 0;
-    position: absolute;
-    top: 1em;
+    padding: 0 5%;
+    flex: initial;
     text-align: center;
-    z-index: 1;
+}
+
+@media (min-width: 600px) {
+    .pano-headline {
+        position: absolute;
+        top: 1em;
+        z-index: 1;
+    }
 }
 
 .pano-caption {
@@ -63,6 +86,7 @@ figure.full-width {
     max-width: 800px;
     margin: 0.5em 0 0; /* longhand 0.5em 0 0 0 */
     padding: 0 5%;
+    font-size: var(--fs-0);
     line-height: 1.5;
     color: #41484d; /* NV-30 */
     flex: initial;
@@ -83,16 +107,27 @@ section {
     width: 90%;
     max-width: 1280px;
     margin: 2em 0 0; /* longhand 2em 0 0 0 */
-    padding: 0 5%;
+    padding: 2em 5%;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; /* main axis */
     align-items: flex-start; /* cross axis */
+    position: relative;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    inset: -2px calc((100vw - 100%) / -2);
+    border-top: 2px solid #e4e9ec;
+    border-bottom: 2px solid #e4e9ec;
+    z-index: -1;
 }
 
 .callout {
-    background: #ffdf96; /* T-90 */
+    background: #c6e7ff; /* P-90 */
+    background: #e4e9ec; /* N-92 */
     border-radius: 6px;
     text-align: center;
     flex: initial;
@@ -152,6 +187,7 @@ canvas {
     max-width: 800px;
     margin: 0.5em 0 0; /* longhand 0.5em 0 0 0 */
     padding: 0;
+    font-size: var(--fs-0);
     line-height: 1.5;
     color: #41484d; /* NV-30 */
     flex: initial;
@@ -159,125 +195,44 @@ canvas {
 
 /* Fonts - line heights, colors, margins */
 p {
+    font-size: var(--fs-0);
     line-height: 1.5;
     color: #171c1f; /* N-10 */
-    margin-top: 0;
+    margin-top: 0.25em;
 }
 
 h1 {
-    line-height: 1.5;
-    color: #000;
+    font-size: var(--fs-3);
+    line-height: 1.2;
+}
+
+/* On background */
+@media (min-width: 300px) and (max-width: 599px) {
+    h1 {
+        color: #171c1f; /* N-10 */
+    }
+}
+
+/* On image */
+@media (min-width: 600px) {
+    h1 {
+        color: #000;
+    }
 }
 
 h2 {
-    line-height: 1.5;
+    font-size: var(--fs-2);
+    line-height: 1.2;
     color: #171c1f; /* N-10 */
-    margin-bottom: 0;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
 h3 {
-    line-height: 1.5;
-    color: #251a00; /* T-10 */
-    margin-bottom: 0;
-}
-
-h4 {
-    line-height: 1.5;
-    color: #251a00; /* T-10 */
-    margin-top: 0;
-}
-
-/* Font media queries */
-@media (min-width: 300px) and (max-width: 399px) {
-    .pano-caption, .chart-caption {
-        font-size: 0.9375em; /* 15px */
-    }
-
-    h1 {
-        font-size: 1.25em; /* 20px */
-    }
-
-    h2 {
-        font-size: 1.125em; /* 18 px */
-    }
-
-    h3 {
-        font-size: 1em; /* 16px */
-    }
-
-    h4 {
-        font-size: 0.9375em; /* 15px */
-    }
-}
-
-@media (min-width: 400px) and (max-width: 499px) {
-    .pano-caption, .chart-caption {
-        font-size: 0.9375em; /* 15px */
-    }
-
-    h1 {
-        font-size: 1.3125em; /* 21px */
-    }
-
-    h2 {
-        font-size: 1.1875em; /* 19px */
-    }
-
-    h3 {
-        font-size: 1.0625em; /* 17px */
-    }
-
-    h4 {
-        font-size: 1em; /* 16px */
-    }
-}
-
-@media (min-width: 500px) and (max-width: 599px) {
-    .pano-caption, .chart-caption {
-        font-size: 0.9375em; /* 15px */
-    }
-
-    h1 {
-        font-size: 1.375em; /* 22px */
-    }
-
-    h2 {
-        font-size: 1.25em; /* 20px */
-    }
-
-    h3 {
-        font-size: 1.125em; /* 18 px */
-    }
-
-    h4 {
-        font-size: 1.0625em; /* 17px */
-    }
-}
-
-@media (min-width: 600px) {
-    .pano-caption, .chart-caption {
-        font-size: 1em; /* 16px */
-    }
-
-    p {
-        font-size: 1.0625em; /* 17px */
-    }
-
-    h1 {
-        font-size: 1.4375em; /* 23px */
-    }
-
-    h2 {
-        font-size: 1.3125em; /* 21px */
-    }
-
-    h3 {
-        font-size: 1.1875em; /* 19px */
-    }
-
-    h4 {
-        font-size: 1.125em; /* 18 px */
-    }
+    font-size: var(--fs-1);
+    line-height: 1.2;
+    color: #171c1f; /* N-10 */
+    margin-bottom: 0.25em;
 }
 
 /* GOOGLE Fonts: Font-family bevan-regular */
