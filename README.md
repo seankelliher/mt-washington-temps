@@ -43,4 +43,6 @@ The Mt. Washington Observatory does not have an API to draw data from. Instead, 
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * Linting guidance from [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io).
 * Design guidance from Google's [Material Design](https://material.io/design).
+* Fonts from [Google Fonts](https://fonts.google.com).
+* Fluid typography guidance from [Utopia](https://utopia.fyi).
 * Shields from [Shields](https://shields.io).
