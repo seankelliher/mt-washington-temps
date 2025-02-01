@@ -3,6 +3,7 @@ import PanoImage from "./components/PanoImage.vue";
 import PanoCaption from "./components/PanoCaption.vue";
 import CallOuts from "./components/CallOuts.vue";
 import TempsChart from "./components/TempsChart.vue";
+import TempsTable from "./components/TempsTable.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import TempsChart from "./components/TempsChart.vue";
         <PanoCaption />
         <CallOuts />
         <TempsChart />
+        <TempsTable />
     </div>
 </template>
 
