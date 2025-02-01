@@ -126,7 +126,6 @@ section::before {
 }
 
 .callout {
-    background: #c6e7ff; /* P-90 */
     background: #e4e9ec; /* N-92 */
     border-radius: 6px;
     text-align: center;
@@ -156,8 +155,8 @@ section::before {
     flex: initial;
 }
 
-/* Chart elements */
-.chart {
+/* Chart displays on larger screens  */
+.chart-table {
     width: 90%;
     margin: 2em 0;
     padding: 0 5%;
@@ -168,7 +167,7 @@ section::before {
     align-items: flex-start; /* cross axis */
 }
 
-.chart-title {
+.chart-table-title {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -182,7 +181,7 @@ canvas {
     flex: initial;
 }
 
-.chart-caption {
+.chart-table-caption {
     width: 100%;
     max-width: 800px;
     margin: 0.5em 0 0; /* longhand 0.5em 0 0 0 */
@@ -191,6 +190,68 @@ canvas {
     line-height: 1.5;
     color: #41484d; /* NV-30 */
     flex: initial;
+}
+
+/* Table displays on small screens where chart doesn't work */
+table {
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 0;
+    flex: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
+}
+
+th, tr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /* main axis */
+    align-items: flex-start; /* cross axis */
+    border-bottom: 2px solid #e4e9ec;
+}
+
+td {
+    width: 13%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: var(--fs-0);
+    line-height: 1.5;
+    color: #171c1f; /* N-10 */
+}
+
+td:first-child {
+    border-left: none;  
+}
+
+td:last-child {
+    border-right: none;  
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+    .chart-view {
+        display: none;
+    }
+
+    .table-view {
+        display: flex;
+    }
+}
+
+@media (min-width: 600px) {
+    .chart-view {
+        display: flex;
+    }
+
+    .table-view {
+        display: none;
+    }
 }
 
 /* Fonts - line heights, colors, margins */
