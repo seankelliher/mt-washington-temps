@@ -158,13 +158,13 @@ onMounted(()=> {
 </script>
 
 <template>
-    <div class="chart">
-        <div class="chart-title">
+    <div class="chart-table chart-view">
+        <div class="chart-table-title">
             <h2 class="bevan-regular">Monthly temperatures</h2>
             <p class="roboto-serif four">Average monthly temperatures for each month, 2005 - 2023</p>
         </div>
         <canvas id="monthly-temps-chart"></canvas>
-        <div class="chart-caption roboto-serif four">Data from the Mt. Washington Observatory, a weather station located on the mountain's summit. The Observatory monitors weather year round.</div>
+        <div class="chart-table-caption roboto-serif four">Data from the Mt. Washington Observatory, a weather station located on the mountain's summit. The Observatory monitors weather year round.</div>
     </div>
 </template>
 
