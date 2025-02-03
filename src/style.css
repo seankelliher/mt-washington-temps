@@ -130,6 +130,7 @@ section::before {
     border-radius: 6px;
     text-align: center;
     flex: initial;
+    opacity: 0;
 }
 
 @media (min-width: 300px) and (max-width: 559px) {
@@ -252,6 +253,21 @@ td:last-child {
     .table-view {
         display: none;
     }
+}
+
+/* Animations */
+@keyframes fade-in-anime {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in-anime 2.5s forwards;
 }
 
 /* Fonts - line heights, colors, margins */

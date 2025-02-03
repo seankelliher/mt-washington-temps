@@ -1,5 +1,21 @@
 <script setup>
 import { store } from "../composables/store.js";
+import { onMounted } from "vue";
+
+onMounted(() => {
+    // Fades in callouts when user scrolls them into view.
+    const callouts = document.querySelectorAll(".callout");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+            }
+        });
+    }, { threshold: 0.75 });
+
+    callouts.forEach(callout => observer.observe(callout));
+});
 </script>
 
 <template>
