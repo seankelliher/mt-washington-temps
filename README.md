@@ -15,6 +15,9 @@ Project meets general accessibility (WACG) and cross-browser requirements. More 
 * Callouts and chart.
 ![screen shot of project](/screenshots/mt-washington-temps-screenshot2.png?s=600)
 
+* On smaller screens, the chart get unreadable and is replaced by a table.
+![screen shot of project](/screenshots/mt-washington-temps-screenshot3.png?s=600)
+
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.
@@ -42,6 +45,7 @@ The Mt. Washington Observatory does not have an API to draw data from. Instead, 
 * Chart built with [Chart.js](https://www.chartjs.org/docs/latest/).
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * Linting guidance from [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io).
+* Design guidance from [ColorBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3).
 * Design guidance from Google's [Material Design](https://material.io/design).
 * Fonts from [Google Fonts](https://fonts.google.com).
 * Fluid typography guidance from [Utopia](https://utopia.fyi).
