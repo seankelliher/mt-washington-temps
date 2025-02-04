@@ -9,7 +9,10 @@ onMounted(() => {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("fade-in");
+                const contains = entry.target.classList.contains("fade-in");
+                if (!contains) {
+                    entry.target.classList.add("fade-in");
+                }
             }
         });
     }, { threshold: 0.75 });
