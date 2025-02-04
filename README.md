@@ -15,7 +15,7 @@ Project meets general accessibility (WACG) and cross-browser requirements. More 
 * Callouts and chart.
 ![screen shot of project](/screenshots/mt-washington-temps-screenshot2.png?s=600)
 
-* On smaller screens, the chart get unreadable and is replaced by a table.
+* On smaller screens, the chart becomes unreadable and is replaced by a table.
 ![screen shot of project](/screenshots/mt-washington-temps-screenshot3.png?s=600)
 
 ## Installation and Setup Instructions
