@@ -16,8 +16,8 @@ function createMonthsChart() {
                 {
                     label: "Jan",
                     data: store.jans,
-                    backgroundColor: "#1e88e5", // blue 600.
-                    borderColor: "#1e88e5",
+                    backgroundColor: "#8c510a",
+                    borderColor: "#8c510a",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -25,8 +25,8 @@ function createMonthsChart() {
                 {
                     label: "Feb",
                     data: store.febs,
-                    backgroundColor: "#0d47a1", // blue 900.
-                    borderColor: "#0d47a1",
+                    backgroundColor: "#d8b365",
+                    borderColor: "#d8b365",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -34,8 +34,8 @@ function createMonthsChart() {
                 {
                     label: "Mar",
                     data: store.mars,
-                    backgroundColor: "#81c784", // green 300.
-                    borderColor: "#81c784",
+                    backgroundColor: "#5ab4ac",
+                    borderColor: "#5ab4ac",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -43,8 +43,8 @@ function createMonthsChart() {
                 {
                     label: "Apr",
                     data: store.aprs,
-                    backgroundColor: "#43a047", // green 600.
-                    borderColor: "#43a047",
+                    backgroundColor: "#01665e",
+                    borderColor: "#01665e",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -53,8 +53,8 @@ function createMonthsChart() {
                 {
                     label: "May",
                     data: store.mays,
-                    backgroundColor: "#1b5e20", // green 900.
-                    borderColor: "#1b5e20",
+                    backgroundColor: "#c51b7d",
+                    borderColor: "#c51b7d",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -62,8 +62,8 @@ function createMonthsChart() {
                 {
                     label: "Jun",
                     data: store.juns,
-                    backgroundColor: "#ff8a65", // deep orange 300.
-                    borderColor: "#ff8a65",
+                    backgroundColor: "#e9a3c9",
+                    borderColor: "#e9a3c9",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -71,8 +71,8 @@ function createMonthsChart() {
                 {
                     label: "Jul",
                     data: store.juls,
-                    backgroundColor: "#f4511e", // deep orange 600.
-                    borderColor: "#f4511e",
+                    backgroundColor: "#a1d76a",
+                    borderColor: "#a1d76a",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -80,8 +80,8 @@ function createMonthsChart() {
                 {
                     label: "Aug",
                     data: store.augs,
-                    backgroundColor: "#bf360c", // deep orange 900.
-                    borderColor: "#bf360c",
+                    backgroundColor: "#4d9221",
+                    borderColor: "#4d9221",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -89,8 +89,8 @@ function createMonthsChart() {
                 {
                     label: "Sep",
                     data: store.seps,
-                    backgroundColor: "#a1887f", // brown 300.
-                    borderColor: "#a1887f",
+                    backgroundColor: "#b35806",
+                    borderColor: "#b35806",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -98,8 +98,8 @@ function createMonthsChart() {
                 {
                     label: "Oct",
                     data: store.octs,
-                    backgroundColor: "#6d4c41", // brown 600.
-                    borderColor: "#6d4c41",
+                    backgroundColor: "#f1a340",
+                    borderColor: "#f1a340",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -107,8 +107,8 @@ function createMonthsChart() {
                 {
                     label: "Nov",
                     data: store.novs,
-                    backgroundColor: "#3e2723", // brown 900.
-                    borderColor: "#3e2723",
+                    backgroundColor: "#998ec3",
+                    borderColor: "#998ec3",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
@@ -116,8 +116,8 @@ function createMonthsChart() {
                 {
                     label: "Dec",
                     data: store.decs,
-                    backgroundColor: "#64b5f6", // blue 300.
-                    borderColor: "#64b5f6",
+                    backgroundColor: "#542788",
+                    borderColor: "#542788",
                     borderWidth: 1,
                     tension: 0.3,
                     hidden: false
