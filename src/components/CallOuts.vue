@@ -26,19 +26,19 @@ onMounted(() => {
         </hgroup>
         <hgroup class="callout">
             <h3 class="roboto-serif six">Spring</h3>
-            <p class="roboto-serif four">{{ store.springAvg }}&deg; F</p>
+            <p class="roboto-serif four callout-text">{{ store.springAvg }}&deg; F</p>
         </hgroup>
         <hgroup class="callout">
             <h3 class="roboto-serif six">Summer</h3>
-            <p class="roboto-serif four">{{ store.summerAvg }}&deg; F</p>
+            <p class="roboto-serif four callout-text">{{ store.summerAvg }}&deg; F</p>
         </hgroup>
         <hgroup class="callout">
             <h3 class="roboto-serif six">Autumn</h3>
-            <p class="roboto-serif four">{{ store.fallAvg }}&deg; F</p>
+            <p class="roboto-serif four callout-text">{{ store.fallAvg }}&deg; F</p>
         </hgroup>
         <hgroup class="callout">
             <h3 class="roboto-serif six">Winter</h3>
-            <p class="roboto-serif four">{{ store.winterAvg }}&deg; F</p>
+            <p class="roboto-serif four callout-text">{{ store.winterAvg }}&deg; F</p>
         </hgroup>
     </section>
 </template>
