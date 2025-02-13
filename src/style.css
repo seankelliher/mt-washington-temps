@@ -222,7 +222,7 @@ th, tr {
     flex-flow: row wrap;
     justify-content: space-between; /* main axis */
     align-items: flex-start; /* cross axis */
-    border-bottom: 2px solid #e4e9ec;
+    border-bottom: 1px solid #c1c7ce;
 }
 
 td {
