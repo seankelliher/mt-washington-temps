@@ -42,7 +42,7 @@ The Mt. Washington Observatory does not have an API to draw data from. Instead, 
 
 * Temperature data from the [Mt. Washington Observatory](https://mountwashington.org/weather/mount-washington-weather-archives/monthly-f6/).
 * Photo of summit [Department of Defense](https://commons.wikimedia.org/wiki/File:USMC-080103-M-0000M-01.jpg).
-* Chart built with [Chart.js](https://www.chartjs.org/docs/latest/).
+* Line graph built with [Chart.js](https://www.chartjs.org/docs/latest/).
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * Linting guidance from [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io).
 * Design guidance from [ColorBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3).
