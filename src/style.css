@@ -207,17 +207,18 @@ table {
     margin-bottom: 2em;
     padding: 0;
     flex: initial;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; /* main axis */
-    align-items: flex-start; /* cross axis */
 }
 
-th, tr {
+thead, tbody {
     width: 100%;
     margin: 0;
     padding: 0;
-    flex: initial;
+}
+
+tr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; /* main axis */
@@ -225,7 +226,7 @@ th, tr {
     border-bottom: 1px solid #c1c7ce;
 }
 
-td {
+th, td {
     width: 13%;
     margin: 0;
     padding: 0;
@@ -233,14 +234,6 @@ td {
     font-size: var(--fs-0);
     line-height: 1.5;
     color: #171c1f; /* N-10 */
-}
-
-td:first-child {
-    border-left: none;  
-}
-
-td:last-child {
-    border-right: none;  
 }
 
 @media (min-width: 300px) and (max-width: 599px) {
